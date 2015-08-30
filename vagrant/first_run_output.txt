@@ -1,0 +1,1092 @@
+➜  vagrant  vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'puphpet/centos65-x64'...
+==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'puphpet/centos65-x64' is up to date...
+==> default: Setting the name of the VM: vagrant_default_1440964326316_85751
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+    default: Adapter 2: hostonly
+==> default: Forwarding ports...
+    default: 22 => 5082 (adapter 1)
+    default: 22 => 2222 (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+    default:
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+==> default: Setting hostname...
+==> default: Configuring and enabling network interfaces...
+==> default: Exporting NFS shared folders...
+==> default: Preparing to edit /etc/exports. Administrator privileges will be required...
+Password:
+==> default: Mounting NFS shared folders...
+==> default: Mounting shared folders...
+    default: /vagrant => /Users/ABN/PhpstormProjects/PHPFrameworks/vagrant
+    default: /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e => /Users/ABN/PhpstormProjects/PHPFrameworks/vagrant/puphpet/puppet/modules
+    default: /tmp/vagrant-puppet/manifests-893fcda21077f5a583c2dbbba8515c0a => /Users/ABN/PhpstormProjects/PHPFrameworks/vagrant/puphpet/puppet
+==> default: Fuse kernel module seems to be not loaded, trying to load it
+==> default: Creating bind mounts for selected devices
+==> default: Creating bind mount from /mnt/vagrant-vflsf_e9y0j6w2e19v to /workspace
+==> default: Running provisioner: shell...
+    default: Running: inline script
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-t9pfbp.sh
+==> default:
+==> default:  ____        ____  _   _ ____      _      generated using
+==> default: |  _ \ _   _|  _ \| | | |  _ \ ___| |_   ___ ___  _ __ ___
+==> default: | |_) | | | | |_) | |_| | |_) / _ \ __| / __/ _ \| '_ ` _ \
+==> default: |  __/| |_| |  __/|  _  |  __/  __/ |_ | (_| (_) | | | | | |
+==> default: |_|    \__,_|_|   |_| |_|_|   \___|\__(_)___\___/|_| |_| |_|
+==> default:
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-nsp2h7.sh
+==> default: Generating public/private rsa key pair.
+==> default: Your identification has been saved in /vagrant/puphpet/files/dot/ssh/root_id_rsa.
+==> default: Your public key has been saved in /vagrant/puphpet/files/dot/ssh/root_id_rsa.pub.
+==> default: The key fingerprint is:
+==> default: ac:76:60:d9:26:4d:2c:b3:ce:87:51:2d:01:37:f1:fb root@local.php.frameworks
+==> default: The key's randomart image is:
+==> default: +--[ RSA 2048]----+
+==> default: |      ..=.       |
+==> default: |       o =       |
+==> default: |      o = o      |
+==> default: |       @ . .     |
+==> default: |      B S .      |
+==> default: |     + B   .     |
+==> default: |      * o   E    |
+==> default: |     . o         |
+==> default: |                 |
+==> default: +-----------------+
+==> default: warning:
+==> default: rpmts_HdrFromFdno: Header V3 RSA/SHA256 Signature, key ID 0608b895: NOKEY
+==> default: Importing GPG key 0x0608B895:
+==> default:  Userid : EPEL (6) <epel@fedoraproject.org>
+==> default:  Package: epel-release-6-8.noarch (@/epel-release-6-8.noarch)
+==> default:  From   : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+==> default: Your private key for SSH-based authentication has been saved to 'puphpet/files/dot/ssh/root_id_rsa'!
+==> default: Generating public/private rsa key pair.
+==> default: Your identification has been saved in /vagrant/puphpet/files/dot/ssh/id_rsa.
+==> default: Your public key has been saved in /vagrant/puphpet/files/dot/ssh/id_rsa.pub.
+==> default: The key fingerprint is:
+==> default: 98:88:7e:d0:94:d5:5e:b9:88:f3:74:62:3c:1c:ae:b3 root@local.php.frameworks
+==> default: The key's randomart image is:
+==> default: +--[ RSA 2048]----+
+==> default: |      ..   .     |
+==> default: |     o  o o      |
+==> default: |    o  * + .     |
+==> default: |   + .oo@ o      |
+==> default: |  o o o*S+       |
+==> default: | . .  o .        |
+==> default: |  . .  o         |
+==> default: |   .  E          |
+==> default: |                 |
+==> default: +-----------------+
+==> default: Your private key for SSH-based authentication has been saved to 'puphpet/files/dot/ssh/id_rsa'!
+==> default: Adding generated root key to /root/.ssh/id_rsa
+==> default: Adding generated root key to /root/.ssh/id_rsa.pub
+==> default: Adding generated root key to /root/.ssh/authorized_keys
+==> default: Adding generated key to /home/vagrant/.ssh/id_rsa
+==> default: Adding generated key to /home/vagrant/.ssh/id_rsa.pub
+==> default: Adding generated key to /home/vagrant/.ssh/authorized_keys
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-l7682s.sh
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-1und17f.sh
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-4twh3r.sh
+==> default: Successfully installed deep_merge-1.0.1
+==> default: 1 gem installed
+==> default: Successfully installed thread_safe-0.3.5
+==> default: Successfully installed minitest-5.8.0
+==> default: Successfully installed tzinfo-1.2.2
+==> default: Successfully installed i18n-0.7.0
+==> default: Successfully installed activesupport-4.2.4
+==> default: 5 gems installed
+==> default: Successfully installed vine-0.2
+==> default: 1 gem installed
+==> default: Upgrading augeas
+==> default: Finished upgrading augeas
+==> default: Running provisioner: puppet...
+==> default: Running Puppet with site.pp...
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/apt/lib/facter/apt_update_last_success.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/apt/lib/facter/apt_updates.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/composer/lib/facter/composer_home.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/concat/lib/facter/concat_basedir.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/firewall/lib/facter/ip6tables_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/firewall/lib/facter/iptables_persistent_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/firewall/lib/facter/iptables_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/git/lib/facter/git_exec_path.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/git/lib/facter/git_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/java/lib/facter/java_major_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/java/lib/facter/java_patch_level.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/java/lib/facter/java_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/php/lib/facter/php_fact_extension_dir.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/php/lib/facter/php_fact_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/puppi/lib/facter/last_run.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/puppi/lib/facter/puppi_projects.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/puppi/lib/facter/windows_common_appdata.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/rvm/lib/facter/rvm_installed.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/rvm/lib/facter/rvm_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/staging/lib/facter/staging_http_get.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/staging/lib/facter/staging_windir.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/stdlib/lib/facter/facter_dot_d.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/stdlib/lib/facter/pe_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/stdlib/lib/facter/puppet_vardir.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/stdlib/lib/facter/root_home.rb
+==> default: Notice: Compiled catalog for local.php.frameworks in environment production in 120.04 seconds
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/apt/lib/facter/apt_update_last_success.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/apt/lib/facter/apt_updates.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/composer/lib/facter/composer_home.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/concat/lib/facter/concat_basedir.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/firewall/lib/facter/ip6tables_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/firewall/lib/facter/iptables_persistent_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/firewall/lib/facter/iptables_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/git/lib/facter/git_exec_path.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/git/lib/facter/git_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/java/lib/facter/java_major_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/java/lib/facter/java_patch_level.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/java/lib/facter/java_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/php/lib/facter/php_fact_extension_dir.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/php/lib/facter/php_fact_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/puppi/lib/facter/last_run.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/puppi/lib/facter/puppi_projects.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/puppi/lib/facter/windows_common_appdata.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/rvm/lib/facter/rvm_installed.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/rvm/lib/facter/rvm_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/staging/lib/facter/staging_http_get.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/staging/lib/facter/staging_windir.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/stdlib/lib/facter/facter_dot_d.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/stdlib/lib/facter/pe_version.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/stdlib/lib/facter/puppet_vardir.rb
+==> default: Info: Loading facts in /tmp/vagrant-puppet/modules-70b56cfddfb72f8600d6a7fef6131a6e/stdlib/lib/facter/root_home.rb
+==> default: Info: Applying configuration version '1440964490'
+==> default: Notice: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat]/ensure: created
+==> default: Notice: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat/bin]/ensure: created
+==> default: Notice: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat/bin/concatfragments.sh]/ensure: defined content as '{md5}7bbe7c5fce25a5ddd20415d909ba44fc'
+==> default: Notice: /Stage[main]/Puphpet_solr/Exec[create solr conf dir]/returns: executed successfully
+==> default: Notice: /Stage[main]/Rabbitmq::Repo::Rhel/Exec[rpm --import http://www.rabbitmq.com/rabbitmq-signing-key-public.asc]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet::Apache::Repo::Centos/Exec[download http://repo.puphpet.com/centos/httpd24/httpd-2.4.10-RPM-full.x86_64.tgz]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet::Sqlite::Install/Group[sqlite]/ensure: created
+==> default: Notice: /Stage[main]/Staging/File[/opt/staging]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_php/Exec[mkdir -p /var/lib/php/session]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Exec[mkdir -p /var/lib/php/session]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Postgresql::Repo::Yum_postgresql_org/File[/etc/pki/rpm-gpg/RPM-GPG-KEY-PGDG-93]/ensure: defined content as '{md5}78b5db170d33f80ad5a47863a7476b22'
+==> default: Notice: /Stage[main]/Puphpet::Apache::Repo::Centos/Exec[untar /.puphpet-stuff/httpd-2.4.tgz]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet::Apache::Repo::Centos/Exec[install httpd-2.4.10]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet::Nodejs/File[/.puphpet-stuff/node_install.sh]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Nodejs/Exec[install-node]/returns: executed successfully
+==> default: Notice: /Stage[main]/Supervisord::Pip/Exec[install_setuptools]/returns: executed successfully
+==> default: Notice: /Stage[main]/Supervisord::Pip/Exec[install_pip]/returns: executed successfully
+==> default: Info: /Stage[main]/Supervisord::Pip/Exec[install_pip]: Scheduling refresh of Exec[pip_provider_name_fix]
+==> default: Notice: /Stage[main]/Supervisord::Pip/Exec[pip_provider_name_fix]/returns: executed successfully
+==> default: Notice: /Stage[main]/Supervisord::Pip/Exec[pip_provider_name_fix]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Puphpet_usersgroups/Group[developers]/ensure: created
+==> default: Info: create new repo mongodb in file /etc/yum.repos.d/mongodb.repo
+==> default:
+==> default: Notice: /Stage[main]/Mongodb::Repo::Yum/Yumrepo[mongodb]/descr: descr changed '' to 'MongoDB/10gen Repository'
+==> default: Notice: /Stage[main]/Mongodb::Repo::Yum/Yumrepo[mongodb]/baseurl: baseurl changed '' to 'http://downloads-distro.mongodb.org/repo/redhat/os/x86_64/'
+==> default: Notice: /Stage[main]/Mongodb::Repo::Yum/Yumrepo[mongodb]/enabled: enabled changed '' to '1'
+==> default: Notice: /Stage[main]/Mongodb::Repo::Yum/Yumrepo[mongodb]/gpgcheck: gpgcheck changed '' to '0'
+==> default: Info: changing mode of /etc/yum.repos.d/mongodb.repo from 600 to 644
+==> default: Notice: /Stage[main]/Solr::Install/Puppi::Netinstall[netinstall_solr]/Exec[Retrieve http://archive.apache.org/dist/lucene/solr/4.10.2/solr-4.10.2.tgz in /var/tmp]/returns: executed successfully
+==> default: Notice: /Stage[main]/Solr::Install/Puppi::Netinstall[netinstall_solr]/Exec[Extract solr-4.10.2.tgz from /var/tmp]/returns: executed successfully
+==> default: Info: /Stage[main]/Solr::Install/Puppi::Netinstall[netinstall_solr]/Exec[Extract solr-4.10.2.tgz from /var/tmp]: Scheduling refresh of Exec[Chown solr-4.10.2.tgz in /opt/solr]
+==> default: Notice: /Stage[main]/Solr::Install/Puppi::Netinstall[netinstall_solr]/Exec[Chown solr-4.10.2.tgz in /opt/solr]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Puphpet::Php::Xhprof/Exec[delete-xhprof-path-if-empty-folder]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_server/Group[www-user]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_server/Group[puppet]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_server/User[nginx]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_server/User[apache]/shell: shell changed '/sbin/nologin' to '/bin/bash'
+==> default: Notice: /Stage[main]/Puphpet_server/User[apache]/groups: groups changed '' to 'www-data'
+==> default: Notice: /Stage[main]/Puphpet_server/User[httpd]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_server/User[www-user]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_server/User[www-data]/groups: groups changed '' to 'www-data'
+==> default: Notice: /Stage[main]/Puphpet_php/File[/var/lib/php/session]/owner: owner changed 'root' to 'www-data'
+==> default:
+==> default: Notice: /Stage[main]/Puphpet_php/File[/var/lib/php/session]/group: group changed 'root' to 'www-data'
+==> default: Notice: /Stage[main]/Puphpet_usersgroups/User[dev1]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Sqlite::Install/User[sqlite]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Sqlite::Install/File[/var/lib/sqlite]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mongodb/File[/data]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mongodb/File[/data/db]/ensure: created
+==> default: Notice: /Stage[main]/Swap_file/Exec[Create swap file]/returns: executed successfully
+==> default: Notice: /Stage[main]/Swap_file/Exec[Attach swap file]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_server/User[vagrant]/groups: groups changed 'wheel' to 'rvm,wheel,www-data,www-user'
+==> default: Notice: /Stage[main]/Puphpet_server/Exec[dotfiles]/returns: executed successfully
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-tools-community]/File[/etc/yum.repos.d/mysql-tools-community.repo]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql56-community]/File[/etc/yum.repos.d/mysql56-community.repo]/ensure: created
+==> default: Info: create new repo mysql56-community in file /etc/yum.repos.d/mysql56-community.repo
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql56-community]/Yumrepo[mysql56-community]/descr: descr changed '' to 'MySQL 5.6 Community Server'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql56-community]/Yumrepo[mysql56-community]/baseurl: baseurl changed '' to 'http://repo.mysql.com/yum/mysql-5.6-community/el/6/$basearch/'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql56-community]/Yumrepo[mysql56-community]/enabled: enabled changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql56-community]/Yumrepo[mysql56-community]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql56-community]/Yumrepo[mysql56-community]/gpgkey: gpgkey changed '' to 'file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql56-community]/Yumrepo[mysql56-community]/priority: priority changed '' to '99'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[contrib]/File[/etc/yum.repos.d/contrib.repo]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[contrib]/Yumrepo[contrib]/mirrorlist: mirrorlist changed 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=contrib&infra=$infra' to 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=contrib'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[contrib]/Yumrepo[contrib]/failovermethod: failovermethod changed '' to 'priority'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[contrib]/Yumrepo[contrib]/priority: priority changed '' to '10'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql57-community-dmr]/File[/etc/yum.repos.d/mysql57-community-dmr.repo]/ensure: created
+==> default: Info: create new repo mysql57-community-dmr in file /etc/yum.repos.d/mysql57-community-dmr.repo
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql57-community-dmr]/Yumrepo[mysql57-community-dmr]/descr: descr changed '' to 'MySQL 5.7 Community Server Development Milestone Release'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql57-community-dmr]/Yumrepo[mysql57-community-dmr]/baseurl: baseurl changed '' to 'http://repo.mysql.com/yum/mysql-5.7-community/el/6/$basearch/'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql57-community-dmr]/Yumrepo[mysql57-community-dmr]/enabled: enabled changed '' to '0'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql57-community-dmr]/Yumrepo[mysql57-community-dmr]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql57-community-dmr]/Yumrepo[mysql57-community-dmr]/gpgkey: gpgkey changed '' to 'file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql57-community-dmr]/Yumrepo[mysql57-community-dmr]/priority: priority changed '' to '99'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi-test]/File[/etc/yum.repos.d/remi-test.repo]/ensure: created
+==> default:
+==> default: Info: create new repo remi-test in file /etc/yum.repos.d/remi-test.repo
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi-test]/Yumrepo[remi-test]/descr: descr changed '' to 'Les RPM de remi pour Enterpise Linux $releasever - $basearch - Test'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi-test]/Yumrepo[remi-test]/mirrorlist: mirrorlist changed '' to 'http://rpms.famillecollet.com/enterprise/$releasever/test/mirror'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi-test]/Yumrepo[remi-test]/enabled: enabled changed '' to '0'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi-test]/Yumrepo[remi-test]/gpgcheck: gpgcheck changed '' to '1'
+==> default:
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi-test]/Yumrepo[remi-test]/gpgkey: gpgkey changed '' to 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi-test]/Yumrepo[remi-test]/priority: priority changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Repoforgeextras/Yum::Managed_yumrepo[repoforgeextras]/File[/etc/yum.repos.d/repoforgeextras.repo]/ensure: created
+==> default: Info: create new repo repoforgeextras in file /etc/yum.repos.d/repoforgeextras.repo
+==> default: Notice: /Stage[main]/Yum::Repo::Repoforgeextras/Yum::Managed_yumrepo[repoforgeextras]/Yumrepo[repoforgeextras]/descr: descr changed '' to 'RepoForge extra packages'
+==> default: Notice: /Stage[main]/Yum::Repo::Repoforgeextras/Yum::Managed_yumrepo[repoforgeextras]/Yumrepo[repoforgeextras]/baseurl: baseurl changed '' to 'http://apt.sw.be/redhat/el$releasever/en/$basearch/extras'
+==> default: Notice: /Stage[main]/Yum::Repo::Repoforgeextras/Yum::Managed_yumrepo[repoforgeextras]/Yumrepo[repoforgeextras]/enabled: enabled changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Repoforgeextras/Yum::Managed_yumrepo[repoforgeextras]/Yumrepo[repoforgeextras]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Repoforgeextras/Yum::Managed_yumrepo[repoforgeextras]/Yumrepo[repoforgeextras]/gpgkey: gpgkey changed '' to 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmforge-dag'
+==> default: Notice: /Stage[main]/Yum::Repo::Repoforgeextras/Yum::Managed_yumrepo[repoforgeextras]/Yumrepo[repoforgeextras]/exclude: exclude changed '' to 'perl-IO-Compress-* perl-DBD-MySQL'
+==> default: Notice: /Stage[main]/Yum::Repo::Repoforgeextras/Yum::Managed_yumrepo[repoforgeextras]/Yumrepo[repoforgeextras]/priority: priority changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-connectors-community]/File[/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql]/ensure: defined content as '{md5}26b9ed77a3a087874a27103c1f9d6a6f'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-connectors-community]/File[/etc/yum.repos.d/mysql-connectors-community.repo]/ensure: created
+==> default:
+==> default: Info: create new repo mysql-connectors-community in file /etc/yum.repos.d/mysql-connectors-community.repo
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-connectors-community]/Yumrepo[mysql-connectors-community]/descr: descr changed '' to 'MySQL Connectors Community'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-connectors-community]/Yumrepo[mysql-connectors-community]/baseurl: baseurl changed '' to 'http://repo.mysql.com/yum/mysql-connectors-community/el/6/$basearch/'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-connectors-community]/Yumrepo[mysql-connectors-community]/enabled: enabled changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-connectors-community]/Yumrepo[mysql-connectors-community]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-connectors-community]/Yumrepo[mysql-connectors-community]/gpgkey: gpgkey changed '' to 'file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-connectors-community]/Yumrepo[mysql-connectors-community]/priority: priority changed '' to '99'
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-testing-source]/File[/etc/yum.repos.d/epel-testing-source.repo]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Php::Repos/Yum::Managed_yumrepo[remi-php56]/File[/etc/yum.repos.d/remi-php56.repo]/ensure: created
+==> default: Info: create new repo remi-php56 in file /etc/yum.repos.d/remi-php56.repo
+==> default: Notice: /Stage[main]/Puphpet::Php::Repos/Yum::Managed_yumrepo[remi-php56]/Yumrepo[remi-php56]/descr: descr changed '' to 'Les RPM de remi pour Enterpise Linux $releasever - $basearch - PHP 5.6'
+==> default: Notice: /Stage[main]/Puphpet::Php::Repos/Yum::Managed_yumrepo[remi-php56]/Yumrepo[remi-php56]/mirrorlist: mirrorlist changed '' to 'http://rpms.famillecollet.com/enterprise/$releasever/php56/mirror'
+==> default: Notice: /Stage[main]/Puphpet::Php::Repos/Yum::Managed_yumrepo[remi-php56]/Yumrepo[remi-php56]/enabled: enabled changed '' to '1'
+==> default: Notice: /Stage[main]/Puphpet::Php::Repos/Yum::Managed_yumrepo[remi-php56]/Yumrepo[remi-php56]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Puphpet::Php::Repos/Yum::Managed_yumrepo[remi-php56]/Yumrepo[remi-php56]/gpgkey: gpgkey changed '' to 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi'
+==> default: Notice: /Stage[main]/Puphpet::Php::Repos/Yum::Managed_yumrepo[remi-php56]/Yumrepo[remi-php56]/priority: priority changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-testing-source]/Yumrepo[epel-testing-source]/mirrorlist: mirrorlist changed 'https://mirrors.fedoraproject.org/metalink?repo=testing-source-epel6&arch=$basearch' to 'http://mirrors.fedoraproject.org/mirrorlist?repo=testing-source-epel6&arch=$basearch'
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-testing-source]/Yumrepo[epel-testing-source]/priority: priority changed '' to '17'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[extras]/File[/etc/yum.repos.d/extras.repo]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-debuginfo]/File[/etc/yum.repos.d/epel-debuginfo.repo]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-debuginfo]/Yumrepo[epel-debuginfo]/mirrorlist: mirrorlist changed 'https://mirrors.fedoraproject.org/metalink?repo=epel-debug-6&arch=$basearch' to 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-6&arch=$basearch'
+==> default:
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-debuginfo]/Yumrepo[epel-debuginfo]/priority: priority changed '' to '16'
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-testing]/Yumrepo[epel-testing]/mirrorlist: mirrorlist changed 'https://mirrors.fedoraproject.org/metalink?repo=testing-epel6&arch=$basearch' to 'http://mirrors.fedoraproject.org/mirrorlist?repo=testing-epel6&arch=$basearch'
+==> default:
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-testing]/Yumrepo[epel-testing]/priority: priority changed '' to '17'
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-testing-debuginfo]/File[/etc/yum.repos.d/epel-testing-debuginfo.repo]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-testing-debuginfo]/Yumrepo[epel-testing-debuginfo]/mirrorlist: mirrorlist changed 'https://mirrors.fedoraproject.org/metalink?repo=testing-debug-epel6&arch=$basearch' to 'http://mirrors.fedoraproject.org/mirrorlist?repo=testing-debug-epel6&arch=$basearch'
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-testing-debuginfo]/Yumrepo[epel-testing-debuginfo]/priority: priority changed '' to '17'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[base]/File[/etc/yum.repos.d/base.repo]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[base]/Yumrepo[base]/mirrorlist: mirrorlist changed 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra' to 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[base]/Yumrepo[base]/baseurl: undefined 'baseurl' from 'http://mirror.rackspace.com/CentOS//$releasever/os/$basearch/'
+==> default:
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[base]/Yumrepo[base]/failovermethod: failovermethod changed '' to 'priority'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[base]/Yumrepo[base]/priority: priority changed '' to '1'
+==> default: Info: create new repo mysql-tools-community in file /etc/yum.repos.d/mysql-tools-community.repo
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-tools-community]/Yumrepo[mysql-tools-community]/descr: descr changed '' to 'MySQL Tools Community'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-tools-community]/Yumrepo[mysql-tools-community]/baseurl: baseurl changed '' to 'http://repo.mysql.com/yum/mysql-tools-community/el/6/$basearch/'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-tools-community]/Yumrepo[mysql-tools-community]/enabled: enabled changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-tools-community]/Yumrepo[mysql-tools-community]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-tools-community]/Yumrepo[mysql-tools-community]/gpgkey: gpgkey changed '' to 'file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql-tools-community]/Yumrepo[mysql-tools-community]/priority: priority changed '' to '99'
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-source]/File[/etc/yum.repos.d/epel-source.repo]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-source]/Yumrepo[epel-source]/mirrorlist: mirrorlist changed 'https://mirrors.fedoraproject.org/metalink?repo=epel-source-6&arch=$basearch' to 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-source-6&arch=$basearch'
+==> default:
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel-source]/Yumrepo[epel-source]/priority: priority changed '' to '16'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[updates]/File[/etc/yum.repos.d/updates.repo]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[updates]/Yumrepo[updates]/mirrorlist: mirrorlist changed 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra' to 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[updates]/Yumrepo[updates]/baseurl: undefined 'baseurl' from 'http://mirror.rackspace.com/CentOS//$releasever/updates/$basearch/'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[updates]/Yumrepo[updates]/failovermethod: failovermethod changed '' to 'priority'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[updates]/Yumrepo[updates]/priority: priority changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[extras]/Yumrepo[extras]/mirrorlist: mirrorlist changed 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra' to 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[extras]/Yumrepo[extras]/baseurl: undefined 'baseurl' from 'http://mirror.rackspace.com/CentOS//$releasever/extras/$basearch/'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[extras]/Yumrepo[extras]/failovermethod: failovermethod changed '' to 'priority'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[extras]/Yumrepo[extras]/priority: priority changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel]/Yumrepo[epel]/mirrorlist: mirrorlist changed 'https://mirrors.fedoraproject.org/metalink?repo=epel-6&arch=$basearch' to 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-6&arch=$basearch'
+==> default: Notice: /Stage[main]/Yum::Repo::Epel/Yum::Managed_yumrepo[epel]/Yumrepo[epel]/priority: priority changed '' to '16'
+==> default: Notice: /Stage[main]/Yum::Repo::Rpmforge/Yum::Managed_yumrepo[rpmforge]/File[/etc/pki/rpm-gpg/RPM-GPG-KEY-rpmforge-dag]/ensure: defined content as '{md5}a44f72c72b873d0f8f3021690bb3e52f'
+==> default: Notice: /Stage[main]/Yum::Repo::Rpmforge/Yum::Managed_yumrepo[rpmforge]/File[/etc/yum.repos.d/rpmforge.repo]/ensure: created
+==> default: Info: create new repo rpmforge in file /etc/yum.repos.d/rpmforge.repo
+==> default: Notice: /Stage[main]/Yum::Repo::Rpmforge/Yum::Managed_yumrepo[rpmforge]/Yumrepo[rpmforge]/descr: descr changed '' to 'RHEL $releasever - RPMforge.net - dag'
+==> default: Notice: /Stage[main]/Yum::Repo::Rpmforge/Yum::Managed_yumrepo[rpmforge]/Yumrepo[rpmforge]/mirrorlist: mirrorlist changed '' to 'http://apt.sw.be/redhat/el6/en/mirrors-rpmforge'
+==> default: Notice: /Stage[main]/Yum::Repo::Rpmforge/Yum::Managed_yumrepo[rpmforge]/Yumrepo[rpmforge]/baseurl: baseurl changed '' to 'http://apt.sw.be/redhat/el6/en/$basearch/rpmforge'
+==> default: Notice: /Stage[main]/Yum::Repo::Rpmforge/Yum::Managed_yumrepo[rpmforge]/Yumrepo[rpmforge]/enabled: enabled changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Rpmforge/Yum::Managed_yumrepo[rpmforge]/Yumrepo[rpmforge]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Rpmforge/Yum::Managed_yumrepo[rpmforge]/Yumrepo[rpmforge]/gpgkey: gpgkey changed '' to 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmforge-dag'
+==> default: Notice: /Stage[main]/Yum::Repo::Rpmforge/Yum::Managed_yumrepo[rpmforge]/Yumrepo[rpmforge]/priority: priority changed '' to '30'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi]/File[/etc/pki/rpm-gpg/RPM-GPG-KEY-remi]/ensure: defined content as '{md5}3abb4e5a7b1408c888e19f718c012630'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi]/File[/etc/yum.repos.d/remi.repo]/ensure: created
+==> default: Info: create new repo remi in file /etc/yum.repos.d/remi.repo
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi]/Yumrepo[remi]/descr: descr changed '' to 'Les RPM de remi pour Enterpise Linux $releasever - $basearch'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi]/Yumrepo[remi]/mirrorlist: mirrorlist changed '' to 'http://rpms.famillecollet.com/enterprise/$releasever/remi/mirror'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi]/Yumrepo[remi]/enabled: enabled changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi]/Yumrepo[remi]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi]/Yumrepo[remi]/gpgkey: gpgkey changed '' to 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi'
+==> default: Notice: /Stage[main]/Yum::Repo::Remi/Yum::Managed_yumrepo[remi]/Yumrepo[remi]/priority: priority changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql55-community]/File[/etc/yum.repos.d/mysql55-community.repo]/ensure: created
+==> default: Info: create new repo mysql55-community in file /etc/yum.repos.d/mysql55-community.repo
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql55-community]/Yumrepo[mysql55-community]/descr: descr changed '' to 'MySQL 5.5 Community Server'
+==> default:
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql55-community]/Yumrepo[mysql55-community]/baseurl: baseurl changed '' to 'http://repo.mysql.com/yum/mysql-5.5-community/el/6/$basearch/'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql55-community]/Yumrepo[mysql55-community]/enabled: enabled changed '' to '0'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql55-community]/Yumrepo[mysql55-community]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql55-community]/Yumrepo[mysql55-community]/gpgkey: gpgkey changed '' to 'file:/etc/pki/rpm-gpg/RPM-GPG-KEY-mysql'
+==> default: Notice: /Stage[main]/Yum::Repo::Mysql_community/Yum::Managed_yumrepo[mysql55-community]/Yumrepo[mysql55-community]/priority: priority changed '' to '99'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[centosplus]/File[/etc/yum.repos.d/centosplus.repo]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[centosplus]/Yumrepo[centosplus]/descr: descr changed 'CentOS-$releasever - Plus' to 'CentOS-$releasever - Centosplus'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[centosplus]/Yumrepo[centosplus]/mirrorlist: mirrorlist changed 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus&infra=$infra' to 'http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[centosplus]/Yumrepo[centosplus]/enabled: enabled changed '0' to '1'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[centosplus]/Yumrepo[centosplus]/failovermethod: failovermethod changed '' to 'priority'
+==> default: Notice: /Stage[main]/Yum::Repo::Centos6/Yum::Managed_yumrepo[centosplus]/Yumrepo[centosplus]/priority: priority changed '' to '2'
+==> default: Notice: /Stage[main]/Mongodb::Server::Install/Package[mongodb_server]/ensure: created
+==> default: Notice: /Stage[main]/Mongodb::Client::Install/Package[mongodb_client]/ensure: created
+==> default: Notice: /Stage[main]/Yum::Prerequisites/Yum::Plugin[priorities]/Package[yum-plugin-priorities]/ensure: created
+==> default: Notice: /Stage[main]/Mysql::Client::Install/Package[mysql_client]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_server/Package[htop]/ensure: created
+==> default: Notice: /Stage[main]/Php/Package[php]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_php/Exec[set php session path owner/group]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet::Php::Xdebug/File[/usr/bin/xdebug]/ensure: defined content as '{md5}813de5ab3b902336754e83d0391e375d'
+==> default: Notice: /Stage[main]/Erlang/Package[erlang]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[error_reporting]/Augeas[CUSTOM/error_reporting: -1]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[error_reporting]/Augeas[CUSTOM/error_reporting: -1]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[session.save_path]/Augeas[CUSTOM/session.save_path: /var/lib/php/session]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[session.save_path]/Augeas[CUSTOM/session.save_path: /var/lib/php/session]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_port]/Augeas[XDEBUG/xdebug.remote_port: 9000]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_port]/Augeas[XDEBUG/xdebug.remote_port: 9000]: Scheduling refresh of Service[php-fpm]
+==> default: Info: Puphpet::Php::Ini[xdebug.remote_port]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Java/Package[java]/ensure: created
+==> default: Notice: /Stage[main]/Php::Pear/Package[php-pear]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.default_enable]/Augeas[XDEBUG/xdebug.default_enable: 1]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.default_enable]/Augeas[XDEBUG/xdebug.default_enable: 1]: Scheduling refresh of Service[php-fpm]
+==> default: Info: Puphpet::Php::Ini[xdebug.default_enable]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Mysql::Server::Install/Package[mysql-server]/ensure: created
+==> default: Notice: /Stage[main]/Mysql::Server::Install/Exec[mysql_install_db]/returns: executed successfully
+==> default: Info: /Stage[main]/Mysql::Server::Install/Exec[mysql_install_db]: Scheduling refresh of Class[Mysql::Server::Service]
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[date.timezone]/Augeas[CUSTOM/date.timezone: UTC]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[date.timezone]/Augeas[CUSTOM/date.timezone: UTC]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_connect_back]/Augeas[XDEBUG/xdebug.remote_connect_back: 1]/returns: executed successfully
+==> default:
+==> default: Info: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_connect_back]/Augeas[XDEBUG/xdebug.remote_connect_back: 1]: Scheduling refresh of Service[php-fpm]
+==> default: Info: Puphpet::Php::Ini[xdebug.remote_connect_back]: Scheduling refresh of Service[php-fpm]
+==> default: Info: /Stage[main]/Ntp::Config/File[/etc/ntp.conf]: Filebucketed /etc/ntp.conf to puppet with sum 7fda24f62b1c7ae951db0f746dc6e0cc
+==> default: Notice: /Stage[main]/Ntp::Config/File[/etc/ntp.conf]/content: content changed '{md5}7fda24f62b1c7ae951db0f746dc6e0cc' to '{md5}2636a5850e17ae4967c8202bcad81705'
+==> default: Info: Class[Ntp::Config]: Scheduling refresh of Class[Ntp::Service]
+==> default: Info: Class[Ntp::Service]: Scheduling refresh of Service[ntp]
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Module[mcrypt]/Php::Module[mcrypt]/Package[PhpModule_mcrypt]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Module[mcrypt]/Php::Module[mcrypt]/Package[PhpModule_mcrypt]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_nodejs/Package[express]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_solr/Puphpet::Firewall::Port[8984]/Firewall[100 tcp/8984]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Firewall::Pre/Firewall[000 accept all icmp]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_rabbitmq/Puphpet::Firewall::Port[5672]/Firewall[100 tcp/5672]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Puphpet::Firewall::Port[80]/Firewall[100 tcp/80]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Puphpet::Firewall::Port[443]/Firewall[100 tcp/443]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Php::Xhprof/Vcsrepo[/var/www/html/xhprof]/ensure: Creating repository from present
+==> default: Notice: /Stage[main]/Puphpet::Php::Xhprof/Vcsrepo[/var/www/html/xhprof]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Fpm::Pool_ini[www/group: www-data]/Augeas[www/group: www-data]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Fpm::Pool_ini[www/group: www-data]/Augeas[www/group: www-data]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Fpm::Pool_ini[www/security.limit_extensions: .php]/Augeas[www/security.limit_extensions: .php]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Fpm::Pool_ini[www/security.limit_extensions: .php]/Augeas[www/security.limit_extensions: .php]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Rabbitmq::Install/Package[rabbitmq-server]/ensure: created
+==> default: Info: /Stage[main]/Rabbitmq::Install/Package[rabbitmq-server]: Scheduling refresh of Class[Rabbitmq::Service]
+==> default: Notice: /Stage[main]/Rabbitmq/Rabbitmq_plugin[rabbitmq_management]/ensure: created
+==> default: Info: /Stage[main]/Rabbitmq/Rabbitmq_plugin[rabbitmq_management]: Scheduling refresh of Class[Rabbitmq::Service]
+==> default: Notice: /Stage[main]/Rabbitmq::Config/File[rabbitmq.config]/ensure: defined content as '{md5}c4f78868d7f1c83611108e7466c3f5df'
+==> default: Info: /Stage[main]/Rabbitmq::Config/File[rabbitmq.config]: Scheduling refresh of Class[Rabbitmq::Service]
+==> default: Notice: /Stage[main]/Rabbitmq::Config/File[rabbitmqadmin.conf]/ensure: defined content as '{md5}44d4ef5cb86ab30e6127e83939ef09c4'
+==> default: Info: /Stage[main]/Mysql::Server::Config/File[mysql-config-file]: Filebucketed /etc/my.cnf to puppet with sum f77e48a80f8978c29f99b0129ab83870
+==> default: Notice: /Stage[main]/Mysql::Server::Config/File[mysql-config-file]/content: content changed '{md5}f77e48a80f8978c29f99b0129ab83870' to '{md5}d0d209eb5ed544658b3f1a72274bc3ed'
+==> default: Info: Class[Mysql::Server::Config]: Scheduling refresh of Class[Mysql::Server::Service]
+==> default: Info: Class[Mysql::Server::Service]: Scheduling refresh of Service[mysqld]
+==> default: Notice: /Stage[main]/Mysql::Server::Service/Service[mysqld]/ensure: ensure changed 'stopped' to 'running'
+==> default: Info: /Stage[main]/Mysql::Server::Service/Service[mysqld]: Unscheduling refresh on Service[mysqld]
+==> default: Notice: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_handler]/Augeas[XDEBUG/xdebug.remote_handler: dbgp]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_handler]/Augeas[XDEBUG/xdebug.remote_handler: dbgp]: Scheduling refresh of Service[php-fpm]
+==> default: Info: Puphpet::Php::Ini[xdebug.remote_handler]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[display_errors]/Augeas[CUSTOM/display_errors: On]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[display_errors]/Augeas[CUSTOM/display_errors: On]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Composer/Exec[download_composer]/returns: executed successfully
+==> default: Notice: /Stage[main]/Postgresql::Client/File[/usr/local/bin/validate_postgresql_connection.sh]/ensure: defined content as '{md5}20301932819f035492a30880f5bf335a'
+==> default: Notice: /Stage[main]/Composer/File[/usr/local/bin/composer]/ensure: defined content as '{md5}698fb41bc631ecc459f85829e49d1311'
+==> default: Notice: /Stage[main]/Php::Devel/Package[php-devel]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Php::Xdebug/Vcsrepo[/.puphpet-stuff/xdebug]/ensure: Creating repository from present
+==> default: Notice: /Stage[main]/Puphpet::Php::Xdebug/Vcsrepo[/.puphpet-stuff/xdebug]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Php::Xdebug/Exec[phpize && ./configure --enable-xdebug && make]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Fpm::Ini[error_log: /var/log/php-fpm.log]/Augeas[global/error_log: /var/log/php-fpm.log]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Fpm::Ini[error_log: /var/log/php-fpm.log]/Augeas[global/error_log: /var/log/php-fpm.log]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_mysql/Puphpet::Php::Module[mysqlnd]/Php::Module[mysqlnd]/Package[PhpModule_mysqlnd]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_mysql/Puphpet::Php::Module[mysqlnd]/Php::Module[mysqlnd]/Package[PhpModule_mysqlnd]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_enable]/Augeas[XDEBUG/xdebug.remote_enable: 1]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_enable]/Augeas[XDEBUG/xdebug.remote_enable: 1]: Scheduling refresh of Service[php-fpm]
+==> default: Info: Puphpet::Php::Ini[xdebug.remote_enable]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Ntp::Service/Service[ntp]/ensure: ensure changed 'stopped' to 'running'
+==> default: Info: /Stage[main]/Ntp::Service/Service[ntp]: Unscheduling refresh on Service[ntp]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[auth_digest]/File[auth_digest.load]/ensure: defined content as '{md5}df9e85f8da0b239fe8e698ae7ead4f60'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[auth_digest]/File[auth_digest.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Mime/Apache::Mod[mime]/File[mime.load]/ensure: defined content as '{md5}e36257b9efab01459141d423cae57c7c'
+==> default: Info: /Stage[main]/Apache::Mod::Mime/Apache::Mod[mime]/File[mime.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[expires]/File[expires.load]/ensure: defined content as '{md5}f0825bad1e470de86ffabeb86dcc5d95'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[expires]/File[expires.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Dav/Apache::Mod[dav]/File[dav.load]/ensure: defined content as '{md5}588e496251838c4840c14b28b5aa7881'
+==> default: Info: /Stage[main]/Apache::Mod::Dav/Apache::Mod[dav]/File[dav.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_owner]/File[authz_owner.load]/ensure: defined content as '{md5}f30a9be1016df87f195449d9e02d1857'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_owner]/File[authz_owner.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_groupfile]/File[authz_groupfile.load]/ensure: defined content as '{md5}ae005a36b3ac8c20af36c434561c8a75'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_groupfile]/File[authz_groupfile.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_dbm]/File[authn_dbm.load]/ensure: defined content as '{md5}90ee8f8ef1a017cacadfda4225e10651'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_dbm]/File[authn_dbm.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_core]/File[authn_core.load]/ensure: defined content as '{md5}704d6e8b02b0eca0eba4083960d16c52'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_core]/File[authn_core.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Authz_user/Apache::Mod[authz_user]/File[authz_user.load]/ensure: defined content as '{md5}63594303ee808423679b1ea13dd5a784'
+==> default: Info: /Stage[main]/Apache::Mod::Authz_user/Apache::Mod[authz_user]/File[authz_user.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[log_config]/File[log_config.load]/ensure: defined content as '{md5}785d35cb285e190d589163b45263ca89'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[log_config]/File[log_config.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[logio]/File[logio.load]/ensure: defined content as '{md5}084533c7a44e9129d0e6df952e2472b6'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[logio]/File[logio.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Ssl/Apache::Mod[socache_shmcb]/File[socache_shmcb.load]/ensure: defined content as '{md5}ab31a6ea611785f74851b578572e4157'
+==> default: Info: /Stage[main]/Apache::Mod::Ssl/Apache::Mod[socache_shmcb]/File[socache_shmcb.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Mime/File[mime.conf]/ensure: defined content as '{md5}2fa646fe615e44d137a5d629f868c107'
+==> default: Info: /Stage[main]/Apache::Mod::Mime/File[mime.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[access_compat]/File[access_compat.load]/ensure: defined content as '{md5}d5feb88bec4570e2dbc41cce7e0de003'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[access_compat]/File[access_compat.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat[25-av_zend.conf]/File[/var/lib/puppet/concat/25-av_zend.conf]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat[25-av_zend.conf]/File[/var/lib/puppet/concat/25-av_zend.conf]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat[25-av_zend.conf]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Apache::Mod::Version/Apache::Mod[version]/File[version.load]/ensure: defined content as '{md5}1c9243de22ace4dc8266442c48ae0c92'
+==> default: Info: /Stage[main]/Apache::Mod::Version/Apache::Mod[version]/File[version.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Setenvif/File[setenvif.conf]/ensure: defined content as '{md5}c7ede4173da1915b7ec088201f030c28'
+==> default:
+==> default: Info: /Stage[main]/Apache::Mod::Setenvif/File[setenvif.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Actions/Apache::Mod[actions]/File[actions.load]/ensure: defined content as '{md5}599866dfaf734f60f7e2d41ee8235515'
+==> default: Info: /Stage[main]/Apache::Mod::Actions/Apache::Mod[actions]/File[actions.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Deflate/File[deflate.conf]/ensure: defined content as '{md5}35506746efa82c4e203c8a724980bdc6'
+==> default: Info: /Stage[main]/Apache::Mod::Deflate/File[deflate.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Worker/Apache::Mpm[worker]/File[/etc/httpd/conf.d/worker.load]/ensure: defined content as '{md5}dbd53349f12f9fceabb90459af4a2540'
+==> default: Info: /Stage[main]/Apache::Mod::Worker/Apache::Mpm[worker]/File[/etc/httpd/conf.d/worker.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Info: /Stage[main]/Apache/File[/etc/httpd/conf/httpd.conf]: Filebucketed /etc/httpd/conf/httpd.conf to puppet with sum 308c394e5bab32a0ee84a159154c84d8
+==> default: Notice: /Stage[main]/Apache/File[/etc/httpd/conf/httpd.conf]/content: content changed '{md5}308c394e5bab32a0ee84a159154c84d8' to '{md5}9618dd61b3e71c1760a1e8c61c27567e'
+==> default: Info: /Stage[main]/Apache/File[/etc/httpd/conf/httpd.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Proxy/Apache::Mod[proxy]/File[proxy.load]/ensure: defined content as '{md5}fe26a0a70f572eb256a3c6c183a62223'
+==> default: Info: /Stage[main]/Apache::Mod::Proxy/Apache::Mod[proxy]/File[proxy.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_core]/File[authz_core.load]/ensure: defined content as '{md5}39942569bff2abdb259f9a347c7246bc'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_core]/File[authz_core.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Negotiation/File[negotiation.conf]/ensure: defined content as '{md5}47284b5580b986a6ba32580b6ffb9fd7'
+==> default: Info: /Stage[main]/Apache::Mod::Negotiation/File[negotiation.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Alias/Apache::Mod[alias]/File[alias.load]/ensure: defined content as '{md5}3cf2fa309ccae4c29a4b875d0894cd79'
+==> default: Info: /Stage[main]/Apache::Mod::Alias/Apache::Mod[alias]/File[alias.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[env]/File[env.load]/ensure: defined content as '{md5}d74184d40d0ee24ba02626a188ee7e1a'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[env]/File[env.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Negotiation/Apache::Mod[negotiation]/File[negotiation.load]/ensure: defined content as '{md5}d262ee6a5f20d9dd7f87770638dc2ccd'
+==> default: Info: /Stage[main]/Apache::Mod::Negotiation/Apache::Mod[negotiation]/File[negotiation.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat[25-av_zend.conf]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat[25-av_zend.conf]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-serveralias]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/190_av_zend-serveralias]/ensure: defined content as '{md5}d9bcf2f7bcc2b21b5d60767df9b6131c'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-serveralias]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/190_av_zend-serveralias]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-file_footer]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/999_av_zend-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-file_footer]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/999_av_zend-file_footer]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-access_log]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/100_av_zend-access_log]/ensure: defined content as '{md5}680d6f04e005ac4e234713df1ac37821'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-access_log]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/100_av_zend-access_log]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_dbm]/File[authz_dbm.load]/ensure: defined content as '{md5}c1363277984d22f99b70f7dce8753b60'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_dbm]/File[authz_dbm.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat[10-default_vhost_443.conf]/File[/var/lib/puppet/concat/10-default_vhost_443.conf]/ensure: created
+==> default:
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat[10-default_vhost_443.conf]/File[/var/lib/puppet/concat/10-default_vhost_443.conf]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat[10-default_vhost_443.conf]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat[10-default_vhost_443.conf]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-docroot]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/10_default_vhost_443-docroot]/ensure: defined content as '{md5}6faaccbc7ca8bc885ebf139223885d52'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-docroot]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/10_default_vhost_443-docroot]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-directories]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/60_default_vhost_443-directories]/ensure: defined content as '{md5}4f787d3aee4ff435f9ab9cecb4cc7068'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-directories]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/60_default_vhost_443-directories]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-apache-header]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/0_default_vhost_443-apache-header]/ensure: defined content as '{md5}2aab0aa1110a48821f9d1e2afca3c1ac'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-apache-header]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/0_default_vhost_443-apache-header]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Apache::Mod::Dir/File[dir.conf]/ensure: defined content as '{md5}c741d8ea840e6eb999d739eed47c69d7'
+==> default: Info: /Stage[main]/Apache::Mod::Dir/File[dir.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-ssl]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/210_default_vhost_443-ssl]/ensure: defined content as '{md5}61362a255eca916620be58f473cc7391'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-ssl]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/210_default_vhost_443-ssl]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[usertrack]/File[usertrack.load]/ensure: defined content as '{md5}e95fbbf030fabec98b948f8dc217775c'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[usertrack]/File[usertrack.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat[10-default_vhost_443.conf]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Apache::Mod::Vhost_alias/Apache::Mod[vhost_alias]/File[vhost_alias.load]/ensure: defined content as '{md5}eca907865997d50d5130497665c3f82e'
+==> default: Info: /Stage[main]/Apache::Mod::Vhost_alias/Apache::Mod[vhost_alias]/File[vhost_alias.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[substitute]/File[substitute.load]/ensure: defined content as '{md5}8077c34a71afcf41c8fc644830935915'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[substitute]/File[substitute.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Setenvif/Apache::Mod[setenvif]/File[setenvif.load]/ensure: defined content as '{md5}ec6c99f7cc8e35bdbcf8028f652c9f6d'
+==> default: Info: /Stage[main]/Apache::Mod::Setenvif/Apache::Mod[setenvif]/File[setenvif.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-logging]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/80_default_vhost_443-logging]/ensure: defined content as '{md5}bc5f99aec5bcc3d705399c5fd6330552'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-logging]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/80_default_vhost_443-logging]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[unixd]/File[unixd.load]/ensure: defined content as '{md5}0e8468ecc1265f8947b8725f4d1be9c0'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[unixd]/File[unixd.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat[10-default_vhost_80.conf]/File[/var/lib/puppet/concat/10-default_vhost_80.conf]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat[10-default_vhost_80.conf]/File[/var/lib/puppet/concat/10-default_vhost_80.conf]: Scheduling refresh of Exec[concat_10-default_vhost_80.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat[10-default_vhost_80.conf]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments]/ensure: created
+==> default:
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat[10-default_vhost_80.conf]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments]: Scheduling refresh of Exec[concat_10-default_vhost_80.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-access_log]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/100_default_vhost_80-access_log]/ensure: defined content as '{md5}c598fe10d6cd027aeaeaa4ebdf1d9b37'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-access_log]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/100_default_vhost_80-access_log]: Scheduling refresh of Exec[concat_10-default_vhost_80.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat[10-default_vhost_80.conf]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-apache-header]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/0_default_vhost_80-apache-header]/ensure: defined content as '{md5}0d7ce54e6cea8b2e6301eca91b62f811'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-apache-header]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/0_default_vhost_80-apache-header]: Scheduling refresh of Exec[concat_10-default_vhost_80.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-logging]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/80_default_vhost_80-logging]/ensure: defined content as '{md5}28d015d6ecd2e96caf7dcd493236c089'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-logging]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/80_default_vhost_80-logging]: Scheduling refresh of Exec[concat_10-default_vhost_80.conf]
+==> default: Notice: /Stage[main]/Apache::Mod::Deflate/Apache::Mod[deflate]/File[deflate.load]/ensure: defined content as '{md5}2d1a1afcae0c70557251829a8586eeaf'
+==> default: Info: /Stage[main]/Apache::Mod::Deflate/Apache::Mod[deflate]/File[deflate.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet::Apache::Proxy_fcgi/Apache::Mod[proxy_fcgi]/File[proxy_fcgi.load]/ensure: defined content as '{md5}0858d30d087758292abc5f15358153d2'
+==> default: Info: /Stage[main]/Puphpet::Apache::Proxy_fcgi/Apache::Mod[proxy_fcgi]/File[proxy_fcgi.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-serversignature]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/90_av_zend-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-serversignature]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/90_av_zend-serversignature]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Apache::Mod::Mime_magic/File[mime_magic.conf]/ensure: defined content as '{md5}b258529b332429e2ff8344f726a95457'
+==> default: Info: /Stage[main]/Apache::Mod::Mime_magic/File[mime_magic.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-access_log]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/100_default_vhost_443-access_log]/ensure: defined content as '{md5}5e7992c7c8f2530393ad21e848e0b8da'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-access_log]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/100_default_vhost_443-access_log]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat[10-default_vhost_443.conf]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[auth_basic]/File[auth_basic.load]/ensure: defined content as '{md5}494bcf4b843f7908675d663d8dc1bdc8'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[auth_basic]/File[auth_basic.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Authn_file/Apache::Mod[authn_file]/File[authn_file.load]/ensure: defined content as '{md5}d41656680003d7b890267bb73621c60b'
+==> default: Info: /Stage[main]/Apache::Mod::Authn_file/Apache::Mod[authn_file]/File[authn_file.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-setenv]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/200_av_zend-setenv]/ensure: defined content as '{md5}423b2b2f49f496207a8b1b74ede3ca83'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-setenv]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/200_av_zend-setenv]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-file_footer]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/999_default_vhost_443-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-file_footer]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/999_default_vhost_443-file_footer]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[ext_filter]/File[ext_filter.load]/ensure: defined content as '{md5}76d5e0ac3411a4be57ac33ebe2e52ac8'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[ext_filter]/File[ext_filter.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Worker/File[/etc/httpd/conf.d/worker.conf]/ensure: defined content as '{md5}59cf27b20f14393692303b41f3071df6'
+==> default: Info: /Stage[main]/Apache::Mod::Worker/File[/etc/httpd/conf.d/worker.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Cgid/Apache::Mod[cgid]/File[cgid.load]/ensure: defined content as '{md5}80b74de5dbd6423d5fd64cc82dcd7ea4'
+==> default: Info: /Stage[main]/Apache::Mod::Cgid/Apache::Mod[cgid]/File[cgid.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat[25-av_phalconphp.conf]/File[/var/lib/puppet/concat/25-av_phalconphp.conf]/ensure: created
+==> default:
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat[25-av_phalconphp.conf]/File[/var/lib/puppet/concat/25-av_phalconphp.conf]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat[25-av_phalconphp.conf]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat[25-av_phalconphp.conf]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-access_log]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/100_av_phalconphp-access_log]/ensure: defined content as '{md5}28ee389d0e503acbf8bb1b6f6a5d336d'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-access_log]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/100_av_phalconphp-access_log]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-setenv]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/200_av_phalconphp-setenv]/ensure: defined content as '{md5}423b2b2f49f496207a8b1b74ede3ca83'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-setenv]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/200_av_phalconphp-setenv]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-file_footer]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/999_av_phalconphp-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-file_footer]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/999_av_phalconphp-file_footer]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-apache-header]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/0_av_phalconphp-apache-header]/ensure: defined content as '{md5}53f2cf19b3c34c8489c55be0616a82e2'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-apache-header]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/0_av_phalconphp-apache-header]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-directories]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/60_av_phalconphp-directories]/ensure: defined content as '{md5}6940f031418a9940f3784c5118c01074'
+==> default:
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-directories]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/60_av_phalconphp-directories]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-serveralias]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/190_av_phalconphp-serveralias]/ensure: defined content as '{md5}118b2083d7ce4b4b7152431dce533195'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-serveralias]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/190_av_phalconphp-serveralias]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-logging]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/80_av_phalconphp-logging]/ensure: defined content as '{md5}3a69e4370b80ac772bc9bbc620cdefbd'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-logging]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/80_av_phalconphp-logging]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-serversignature]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/90_av_phalconphp-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-serversignature]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/90_av_phalconphp-serversignature]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-serversignature]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/90_default_vhost_443-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat::Fragment[default_vhost_443-serversignature]/File[/var/lib/puppet/concat/10-default_vhost_443.conf/fragments/90_default_vhost_443-serversignature]: Scheduling refresh of Exec[concat_10-default_vhost_443.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat[10-default_vhost_443.conf]/Exec[concat_10-default_vhost_443.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat[10-default_vhost_443.conf]/Exec[concat_10-default_vhost_443.conf]: Triggered 'refresh' from 10 events
+==> default: Notice: /Stage[main]/Apache::Mod::Speling/Apache::Mod[speling]/File[speling.load]/ensure: defined content as '{md5}f82e9e6b871a276c324c9eeffcec8a61'
+==> default: Info: /Stage[main]/Apache::Mod::Speling/Apache::Mod[speling]/File[speling.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Dir/Apache::Mod[dir]/File[dir.load]/ensure: defined content as '{md5}1bfb1c2a46d7351fc9eb47c659dee068'
+==> default: Info: /Stage[main]/Apache::Mod::Dir/Apache::Mod[dir]/File[dir.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Dav_fs/Apache::Mod[dav_fs]/File[dav_fs.load]/ensure: defined content as '{md5}2996277c73b1cd684a9a3111c355e0d3'
+==> default: Info: /Stage[main]/Apache::Mod::Dav_fs/Apache::Mod[dav_fs]/File[dav_fs.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-directories]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/60_av_zend-directories]/ensure: defined content as '{md5}f8bd04e93050bcae891fb5485e6d20c6'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-directories]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/60_av_zend-directories]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat[25-av_kohana.conf]/File[/var/lib/puppet/concat/25-av_kohana.conf]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat[25-av_kohana.conf]/File[/var/lib/puppet/concat/25-av_kohana.conf]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat[25-av_kohana.conf]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat[25-av_kohana.conf]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-docroot]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/10_av_kohana-docroot]/ensure: defined content as '{md5}301dcfeda02100f01aa044d95505efc2'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-docroot]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/10_av_kohana-docroot]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-directories]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/60_av_kohana-directories]/ensure: defined content as '{md5}33ff06daa25fc5a185fafbad29d03d36'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-directories]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/60_av_kohana-directories]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-serversignature]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/90_av_kohana-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-serversignature]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/90_av_kohana-serversignature]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat[25-av_kohana.conf]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-apache-header]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/0_av_kohana-apache-header]/ensure: defined content as '{md5}09b16ec385299e6352aa2ac5a736d1d5'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-apache-header]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/0_av_kohana-apache-header]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-serveralias]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/190_av_kohana-serveralias]/ensure: defined content as '{md5}2b4ce763fa64efd4660be39fda069ba0'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-serveralias]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/190_av_kohana-serveralias]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-access_log]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/100_av_kohana-access_log]/ensure: defined content as '{md5}2f4bf388de72187f7031397c0c941ba1'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-access_log]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/100_av_kohana-access_log]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat[25-av_kohana.conf]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-setenv]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/200_av_kohana-setenv]/ensure: defined content as '{md5}1e793e2a843cf5d998836453fd5112d4'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-setenv]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/200_av_kohana-setenv]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-logging]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/80_av_kohana-logging]/ensure: defined content as '{md5}1dcae0188b906cc6ad51c84755ffce3b'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-logging]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/80_av_kohana-logging]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-file_footer]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/999_av_kohana-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat::Fragment[av_kohana-file_footer]/File[/var/lib/puppet/concat/25-av_kohana.conf/fragments/999_av_kohana-file_footer]: Scheduling refresh of Exec[concat_25-av_kohana.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-serversignature]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/90_default_vhost_80-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-serversignature]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/90_default_vhost_80-serversignature]: Scheduling refresh of Exec[concat_10-default_vhost_80.conf]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[include]/File[include.load]/ensure: defined content as '{md5}88095a914eedc3c2c184dd5d74c3954c'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[include]/File[include.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Alias/File[alias.conf]/ensure: defined content as '{md5}983e865be85f5e0daaed7433db82995e'
+==> default: Info: /Stage[main]/Apache::Mod::Alias/File[alias.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-file_footer]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/999_default_vhost_80-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-file_footer]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/999_default_vhost_80-file_footer]: Scheduling refresh of Exec[concat_10-default_vhost_80.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-docroot]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/10_av_phalconphp-docroot]/ensure: defined content as '{md5}11f761b2e3d7973f52427da2361f1f5a'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat::Fragment[av_phalconphp-docroot]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments/10_av_phalconphp-docroot]: Scheduling refresh of Exec[concat_25-av_phalconphp.conf]
+==> default: Notice: /Stage[main]/Apache::Mod::Ssl/File[ssl.conf]/ensure: defined content as '{md5}177758b631960a41606d76b9f340e59e'
+==> default: Info: /Stage[main]/Apache::Mod::Ssl/File[ssl.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Ssl/Apache::Mod[ssl]/File[ssl.load]/ensure: defined content as '{md5}e282ac9f82fe5538692a4de3616fb695'
+==> default: Info: /Stage[main]/Apache::Mod::Ssl/Apache::Mod[ssl]/File[ssl.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat[25-av_symfony.conf]/File[/var/lib/puppet/concat/25-av_symfony.conf]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat[25-av_symfony.conf]/File[/var/lib/puppet/concat/25-av_symfony.conf]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat[25-av_symfony.conf]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat[25-av_symfony.conf]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments]/ensure: created
+==> default:
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat[25-av_symfony.conf]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-directories]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/60_av_symfony-directories]/ensure: defined content as '{md5}7872b8ef7ab09ac92af5565a2d6fb036'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-directories]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/60_av_symfony-directories]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-apache-header]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/0_av_symfony-apache-header]/ensure: defined content as '{md5}b3d1f47fb1b2c51a88ea9d4202675502'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-apache-header]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/0_av_symfony-apache-header]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-file_footer]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/999_av_symfony-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-file_footer]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/999_av_symfony-file_footer]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-access_log]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/100_av_symfony-access_log]/ensure: defined content as '{md5}ebdf3da166e2963277c20087c0d466f9'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-access_log]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/100_av_symfony-access_log]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-setenv]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/200_av_symfony-setenv]/ensure: defined content as '{md5}423b2b2f49f496207a8b1b74ede3ca83'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-setenv]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/200_av_symfony-setenv]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-serversignature]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/90_av_symfony-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-serversignature]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/90_av_symfony-serversignature]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-logging]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/80_av_symfony-logging]/ensure: defined content as '{md5}76002e44a1dadbe2a81f83a420e20f3e'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-logging]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/80_av_symfony-logging]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_host]/File[authz_host.load]/ensure: defined content as '{md5}d1045f54d2798499ca0f030ca0eef920'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_host]/File[authz_host.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-serveralias]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/190_av_symfony-serveralias]/ensure: defined content as '{md5}ab9313af36181e4f0140515e2ae877ee'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-serveralias]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/190_av_symfony-serveralias]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Apache::Mod::Suexec/Apache::Mod[suexec]/File[suexec.load]/ensure: defined content as '{md5}c7d5c61c534ba423a79b0ae78ff9be35'
+==> default: Info: /Stage[main]/Apache::Mod::Suexec/Apache::Mod[suexec]/File[suexec.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat[10-default_vhost_80.conf]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-docroot]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/10_av_symfony-docroot]/ensure: defined content as '{md5}b19d7d3afee956f78ff719e8488afab2'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat::Fragment[av_symfony-docroot]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments/10_av_symfony-docroot]: Scheduling refresh of Exec[concat_25-av_symfony.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-docroot]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/10_default_vhost_80-docroot]/ensure: defined content as '{md5}6faaccbc7ca8bc885ebf139223885d52'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-docroot]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/10_default_vhost_80-docroot]: Scheduling refresh of Exec[concat_10-default_vhost_80.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat[25-av_kohana.conf]/Exec[concat_25-av_kohana.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat[25-av_kohana.conf]/Exec[concat_25-av_kohana.conf]: Triggered 'refresh' from 11 events
+==> default: Notice: /Stage[main]/Puphpet::Firewall::Pre/Firewall[001 accept all to lo interface]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Firewall::Pre/Firewall[002 accept related established rules]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_firewall/Puphpet::Firewall::Port[22]/Firewall[100 tcp/22]/ensure: created
+==> default: Notice: /Stage[main]/Apache::Mod::Cache/Apache::Mod[cache]/File[cache.load]/ensure: defined content as '{md5}01e4d392225b518a65b0f7d6c4e21d29'
+==> default: Info: /Stage[main]/Apache::Mod::Cache/Apache::Mod[cache]/File[cache.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[cgi.fix_pathinfo]/Augeas[CUSTOM/cgi.fix_pathinfo: 1]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Ini[cgi.fix_pathinfo]/Augeas[CUSTOM/cgi.fix_pathinfo: 1]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Fpm::Pool_ini[www/user: www-user]/Augeas[www/user: www-user]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Fpm::Pool_ini[www/user: www-user]/Augeas[www/user: www-user]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet::Php::Xdebug/Exec[cp /.puphpet-stuff/xdebug/modules/xdebug.so /usr/lib64/php/modules/xdebug.so]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet::Php::Xdebug/Puphpet::Php::Ini[xdebug/zend_extension]/Augeas[XDEBUG/zend_extension: /usr/lib64/php/modules/xdebug.so]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet::Php::Xdebug/Puphpet::Php::Ini[xdebug/zend_extension]/Augeas[XDEBUG/zend_extension: /usr/lib64/php/modules/xdebug.so]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Apache::Mod::Rewrite/Apache::Mod[rewrite]/File[rewrite.load]/ensure: defined content as '{md5}26e2683352fc1599f29573ff0d934e79'
+==> default: Info: /Stage[main]/Apache::Mod::Rewrite/Apache::Mod[rewrite]/File[rewrite.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat[25-av_zend.conf]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat[25-av_phalconphp.conf]/File[/var/lib/puppet/concat/25-av_phalconphp.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat[25-av_phalconphp.conf]/Exec[concat_25-av_phalconphp.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat[25-av_phalconphp.conf]/Exec[concat_25-av_phalconphp.conf]: Triggered 'refresh' from 11 events
+==> default: Notice: /Stage[main]/Apache::Mod::Autoindex/Apache::Mod[autoindex]/File[autoindex.load]/ensure: defined content as '{md5}515cdf5b573e961a60d2931d39248648'
+==> default: Info: /Stage[main]/Apache::Mod::Autoindex/Apache::Mod[autoindex]/File[autoindex.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Mysql::Server::Root_password/Mysql_user[root@localhost]/password_hash: password_hash changed '' to '*23AE809DDACAF96AF0FD78ED04B6A265E05AA257'
+==> default: Notice: /Stage[main]/Mysql::Server::Root_password/File[/root/.my.cnf]/ensure: defined content as '{md5}fd515303a0bc0ed1738805d0bab3075a'
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_user[dbuser@localhost]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_database[dbmain]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_database[dblaravel]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_database[dbzend]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_database[dbsymfony]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_database[dbphalconphp]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_database[dbcakephp]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_database[dbkohana]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_grant[dbuser@localhost/*.*]/privileges: privileges changed ['USAGE'] to 'ALL'
+==> default: Notice: /Stage[main]/Puphpet_mysql/Mysql_grant[dbuser@localhost/*.*]/options: defined 'options' as 'GRANT'
+==> default: Notice: /Stage[main]/Puphpet_python/Puphpet::Python::Preinstall[foo]/Package[bzip2-devel]/ensure: created
+==> default: Notice: /Stage[main]/Pyenv/Vcsrepo[/usr/local/pyenv]/ensure: Creating repository from present
+==> default: Notice: /Stage[main]/Pyenv/Vcsrepo[/usr/local/pyenv]/ensure: created
+==> default: Notice: /Stage[main]/Solr/File[solr.conf]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-directories]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/60_default_vhost_80-directories]/ensure: defined content as '{md5}c0f5d086c1fb77355364fde626855125'
+==> default:
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat::Fragment[default_vhost_80-directories]/File[/var/lib/puppet/concat/10-default_vhost_80.conf/fragments/60_default_vhost_80-directories]: Scheduling refresh of Exec[concat_10-default_vhost_80.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat[10-default_vhost_80.conf]/Exec[concat_10-default_vhost_80.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat[10-default_vhost_80.conf]/Exec[concat_10-default_vhost_80.conf]: Triggered 'refresh' from 9 events
+==> default: Notice: /Stage[main]/Rabbitmq::Config/File[/etc/rabbitmq/ssl]/ensure: created
+==> default: Notice: /Stage[main]/Apache::Mod::Mime_magic/Apache::Mod[mime_magic]/File[mime_magic.load]/ensure: defined content as '{md5}cb8670bb2fb352aac7ebf3a85d52094c'
+==> default: Info: /Stage[main]/Apache::Mod::Mime_magic/Apache::Mod[mime_magic]/File[mime_magic.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Pyenv/File[/usr/local/bin/pyenv]/ensure: created
+==> default: Notice: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_anon]/File[authn_anon.load]/ensure: defined content as '{md5}bf57b94b5aec35476fc2a2dc3861f132'
+==> default: Info: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_anon]/File[authn_anon.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Autoindex/File[autoindex.conf]/ensure: defined content as '{md5}2421a3c6df32c7e38c2a7a22afdf5728'
+==> default: Info: /Stage[main]/Apache::Mod::Autoindex/File[autoindex.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet::Php::Xhprof/Exec[configure xhprof]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet::Php::Xhprof/Puphpet::Php::Ini[add xhprof ini extension]/Augeas[XHPROF/extension: xhprof.so]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet::Php::Xhprof/Puphpet::Php::Ini[add xhprof ini extension]/Augeas[XHPROF/extension: xhprof.so]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet::Php::Xhprof/Puphpet::Php::Ini[add xhprof ini xhprof.output_dir]/Augeas[XHPROF/xhprof.output_dir: /tmp]/returns: executed successfully
+==> default:
+==> default: Info: /Stage[main]/Puphpet::Php::Xhprof/Puphpet::Php::Ini[add xhprof ini xhprof.output_dir]/Augeas[XHPROF/xhprof.output_dir: /tmp]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf]/ensure: created
+==> default: Info: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf]: Scheduling refresh of Exec[concat_/etc/httpd/conf/ports.conf]
+==> default: Notice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments]/ensure: created
+==> default: Info: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments]: Scheduling refresh of Exec[concat_/etc/httpd/conf/ports.conf]
+==> default: Notice: /Stage[main]/Apache/Concat::Fragment[Apache ports header]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Apache ports header]/ensure: defined content as '{md5}afe35cb5747574b700ebaa0f0b3a626e'
+==> default: Info: /Stage[main]/Apache/Concat::Fragment[Apache ports header]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Apache ports header]: Scheduling refresh of Exec[concat_/etc/httpd/conf/ports.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Apache::Listen[80]/Concat::Fragment[Listen 80]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Listen 80]/ensure: defined content as '{md5}d5fcefc335117f400d451de47efeca87'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Apache::Listen[80]/Concat::Fragment[Listen 80]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Listen 80]: Scheduling refresh of Exec[concat_/etc/httpd/conf/ports.conf]
+==> default: Notice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Apache::Listen[443]/Concat::Fragment[Listen 443]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Listen 443]/ensure: defined content as '{md5}462e40c14c182d965ae6448e832ebb9a'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Apache::Listen[443]/Concat::Fragment[Listen 443]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Listen 443]: Scheduling refresh of Exec[concat_/etc/httpd/conf/ports.conf]
+==> default: Notice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/Exec[concat_/etc/httpd/conf/ports.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/Exec[concat_/etc/httpd/conf/ports.conf]: Triggered 'refresh' from 5 events
+==> default: Notice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/etc/httpd/conf/ports.conf]/ensure: defined content as '{md5}7c4742adc3e33066c74a24c77716ccce'
+==> default: Info: Concat[/etc/httpd/conf/ports.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_autostart]/Augeas[XDEBUG/xdebug.remote_autostart: 0]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_autostart]/Augeas[XDEBUG/xdebug.remote_autostart: 0]: Scheduling refresh of Service[php-fpm]
+==> default: Info: Puphpet::Php::Ini[xdebug.remote_autostart]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_host]/Augeas[XDEBUG/xdebug.remote_host: 10.0.2.2]/returns: executed successfully
+==> default: Info: /Stage[main]/Puphpet_xdebug/Puphpet::Php::Ini[xdebug.remote_host]/Augeas[XDEBUG/xdebug.remote_host: 10.0.2.2]: Scheduling refresh of Service[php-fpm]
+==> default: Info: Puphpet::Php::Ini[xdebug.remote_host]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Apache::Mod::Filter/Apache::Mod[filter]/File[filter.load]/ensure: defined content as '{md5}66a1e2064a140c3e7dca7ac33877700e'
+==> default: Info: /Stage[main]/Apache::Mod::Filter/Apache::Mod[filter]/File[filter.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Proxy/File[proxy.conf]/ensure: defined content as '{md5}9eab682d8c4c89abd0ff20c1a60b908d'
+==> default: Info: /Stage[main]/Apache::Mod::Proxy/File[proxy.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Apache::Mod::Proxy_http/Apache::Mod[proxy_http]/File[proxy_http.load]/ensure: defined content as '{md5}0329b852b123a914fca8b072de61f913'
+==> default: Info: /Stage[main]/Apache::Mod::Proxy_http/Apache::Mod[proxy_http]/File[proxy_http.load]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat[25-av_symfony.conf]/File[/var/lib/puppet/concat/25-av_symfony.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat[25-av_symfony.conf]/Exec[concat_25-av_symfony.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat[25-av_symfony.conf]/Exec[concat_25-av_symfony.conf]: Triggered 'refresh' from 11 events
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat[25-av_laravel.conf]/File[/var/lib/puppet/concat/25-av_laravel.conf]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat[25-av_laravel.conf]/File[/var/lib/puppet/concat/25-av_laravel.conf]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat[25-av_laravel.conf]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat[25-av_laravel.conf]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat[25-av_laravel.conf]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat[25-av_laravel.conf]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-serveralias]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/190_av_laravel-serveralias]/ensure: defined content as '{md5}d454b5e5efafb8f8a28604d2f8b762c3'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-serveralias]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/190_av_laravel-serveralias]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-access_log]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/100_av_laravel-access_log]/ensure: defined content as '{md5}1f1f0821f87f82a1c748f5a68e7d45c9'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-access_log]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/100_av_laravel-access_log]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-docroot]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/10_av_laravel-docroot]/ensure: defined content as '{md5}cfa46a2acdec0bef390c0ae8cdfbb14e'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-docroot]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/10_av_laravel-docroot]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-directories]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/60_av_laravel-directories]/ensure: defined content as '{md5}3d51cd72a3f8369b052ed3960c141608'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-directories]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/60_av_laravel-directories]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-apache-header]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/0_av_laravel-apache-header]/ensure: defined content as '{md5}2d3d67cc443d04d923c190b8b7bc6d28'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-apache-header]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/0_av_laravel-apache-header]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-file_footer]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/999_av_laravel-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-file_footer]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/999_av_laravel-file_footer]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-logging]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/80_av_laravel-logging]/ensure: defined content as '{md5}3fb9c83399409fb3cb0a294085416316'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-logging]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/80_av_laravel-logging]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-setenv]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/200_av_laravel-setenv]/ensure: defined content as '{md5}423b2b2f49f496207a8b1b74ede3ca83'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-setenv]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/200_av_laravel-setenv]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Rabbitmq::Config/File[/etc/security/limits.d/rabbitmq-server.conf]/ensure: defined content as '{md5}5ddc6ba5fcaeddd5b1565e5adfda5236'
+==> default: Info: /Stage[main]/Rabbitmq::Config/File[/etc/security/limits.d/rabbitmq-server.conf]: Scheduling refresh of Class[Rabbitmq::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat[25-av_cakephp.conf]/File[/var/lib/puppet/concat/25-av_cakephp.conf]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat[25-av_cakephp.conf]/File[/var/lib/puppet/concat/25-av_cakephp.conf]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat[25-av_cakephp.conf]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat[25-av_cakephp.conf]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat[25-av_cakephp.conf]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-docroot]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/10_av_cakephp-docroot]/ensure: defined content as '{md5}048ae5288a8a43c0fc7fae3ca5cf9096'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-docroot]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/10_av_cakephp-docroot]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-file_footer]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/999_av_cakephp-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-file_footer]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/999_av_cakephp-file_footer]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-directories]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/60_av_cakephp-directories]/ensure: defined content as '{md5}a816b4ec5b0fcf53ca7da864a48fa397'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-directories]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/60_av_cakephp-directories]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-serveralias]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/190_av_cakephp-serveralias]/ensure: defined content as '{md5}3bd423cd7842456ae31d8c9e0f61a2e3'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-serveralias]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/190_av_cakephp-serveralias]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-setenv]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/200_av_cakephp-setenv]/ensure: defined content as '{md5}423b2b2f49f496207a8b1b74ede3ca83'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-setenv]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/200_av_cakephp-setenv]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-logging]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/80_av_cakephp-logging]/ensure: defined content as '{md5}2fef4b880cffd9cf88d886ef01c2fce4'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-logging]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/80_av_cakephp-logging]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-access_log]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/100_av_cakephp-access_log]/ensure: defined content as '{md5}05747193ce95d395d60ca7d9f337bbce'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-access_log]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/100_av_cakephp-access_log]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-serversignature]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/90_av_cakephp-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-serversignature]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/90_av_cakephp-serversignature]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-apache-header]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/0_av_cakephp-apache-header]/ensure: defined content as '{md5}fd1b0cda32d96f0433db164d1329747c'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat::Fragment[av_cakephp-apache-header]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments/0_av_cakephp-apache-header]: Scheduling refresh of Exec[concat_25-av_cakephp.conf]
+==> default: Notice: /Stage[main]/Supervisord::Install/Package[supervisor]/ensure: created
+==> default: Notice: /Stage[main]/Supervisord::Config/File[/var/log/supervisor]/ensure: created
+==> default: Notice: /Stage[main]/Supervisord::Config/File[/etc/init.d/supervisord]/ensure: created
+==> default: Notice: /Stage[main]/Supervisord::Config/File[/etc/supervisor.d]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_solr/Supervisord::Program[solr]/File[/etc/supervisor.d/program_solr.conf]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_solr/Supervisord::Program[solr]/File[/etc/supervisor.d/program_solr.conf]: Scheduling refresh of Class[Supervisord::Reload]
+==> default: Notice: /Stage[main]/Supervisord::Config/File[/etc/sysconfig/supervisord]/ensure: created
+==> default: Notice: /Stage[main]/Supervisord::Config/Concat[/etc/supervisord.conf]/File[/var/lib/puppet/concat/_etc_supervisord.conf]/ensure: created
+==> default: Info: /Stage[main]/Supervisord::Config/Concat[/etc/supervisord.conf]/File[/var/lib/puppet/concat/_etc_supervisord.conf]: Scheduling refresh of Exec[concat_/etc/supervisord.conf]
+==> default: Notice: /Stage[main]/Supervisord::Config/Concat[/etc/supervisord.conf]/File[/var/lib/puppet/concat/_etc_supervisord.conf/fragments]/ensure: created
+==> default: Info: /Stage[main]/Supervisord::Config/Concat[/etc/supervisord.conf]/File[/var/lib/puppet/concat/_etc_supervisord.conf/fragments]: Scheduling refresh of Exec[concat_/etc/supervisord.conf]
+==> default: Notice: /Stage[main]/Supervisord::Config/Concat::Fragment[supervisord_main]/File[/var/lib/puppet/concat/_etc_supervisord.conf/fragments/02_supervisord_main]/ensure: defined content as '{md5}ee667fb8f3cea08d885e29755cccce32'
+==> default: Info: /Stage[main]/Supervisord::Config/Concat::Fragment[supervisord_main]/File[/var/lib/puppet/concat/_etc_supervisord.conf/fragments/02_supervisord_main]: Scheduling refresh of Exec[concat_/etc/supervisord.conf]
+==> default: Notice: /Stage[main]/Supervisord::Config/Concat[/etc/supervisord.conf]/File[/var/lib/puppet/concat/_etc_supervisord.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Supervisord::Config/Concat[/etc/supervisord.conf]/File[/var/lib/puppet/concat/_etc_supervisord.conf/fragments.concat]/ensure: created
+==> default: Info: Class[Supervisord::Reload]: Scheduling refresh of Exec[supervisorctl_reread]
+==> default: Info: Class[Supervisord::Reload]: Scheduling refresh of Exec[supervisorctl_update]
+==> default: Notice: /Stage[main]/Supervisord::Config/Concat::Fragment[supervisord_unix]/File[/var/lib/puppet/concat/_etc_supervisord.conf/fragments/01_supervisord_unix]/ensure: defined content as '{md5}0a391a2bf6e14fd5e804856f0279f02a'
+==> default: Info: /Stage[main]/Supervisord::Config/Concat::Fragment[supervisord_unix]/File[/var/lib/puppet/concat/_etc_supervisord.conf/fragments/01_supervisord_unix]: Scheduling refresh of Exec[concat_/etc/supervisord.conf]
+==> default: Notice: /Stage[main]/Supervisord::Config/Concat[/etc/supervisord.conf]/Exec[concat_/etc/supervisord.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Supervisord::Config/Concat[/etc/supervisord.conf]/Exec[concat_/etc/supervisord.conf]: Triggered 'refresh' from 4 events
+==> default: Notice: /Stage[main]/Supervisord::Config/Concat[/etc/supervisord.conf]/File[/etc/supervisord.conf]/ensure: defined content as '{md5}7d630c5225ca8f9ba3f38a0ddb9bdc60'
+==> default: Info: Class[Supervisord::Config]: Scheduling refresh of Class[Supervisord::Service]
+==> default: Info: Class[Supervisord::Service]: Scheduling refresh of Service[supervisord]
+==> default: Notice: /Stage[main]/Supervisord::Service/Service[supervisord]/ensure: ensure changed 'stopped' to 'running'
+==> default: Info: /Stage[main]/Supervisord::Service/Service[supervisord]: Unscheduling refresh on Service[supervisord]
+==> default: Notice: /Stage[main]/Supervisord::Reload/Exec[supervisorctl_reread]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Supervisord::Reload/Exec[supervisorctl_update]: Triggered 'refresh' from 1 events
+==> default: Info: Puphpet::Php::Module[mcrypt]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_sqlite/Puphpet::Php::Pecl[sqlite]/Package[php-pecl-sqlite]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_php/Puphpet::Php::Module[intl]/Php::Module[intl]/Package[PhpModule_intl]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_php/Puphpet::Php::Module[intl]/Php::Module[intl]/Package[PhpModule_intl]: Scheduling refresh of Service[php-fpm]
+==> default: Info: Puphpet::Php::Module[intl]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat[25-av_cakephp.conf]/File[/var/lib/puppet/concat/25-av_cakephp.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat[25-av_cakephp.conf]/Exec[concat_25-av_cakephp.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat[25-av_cakephp.conf]/Exec[concat_25-av_cakephp.conf]: Triggered 'refresh' from 11 events
+==> default: Notice: /Stage[main]/Puphpet_postgresql/Puphpet::Php::Module[pgsql]/Php::Module[pgsql]/Package[PhpModule_pgsql]/ensure: created
+==> default: Info: /Stage[main]/Puphpet_postgresql/Puphpet::Php::Module[pgsql]/Php::Module[pgsql]/Package[PhpModule_pgsql]: Scheduling refresh of Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_php/Service[php-fpm]/ensure: ensure changed 'stopped' to 'running'
+==> default: Info: /Stage[main]/Puphpet_php/Service[php-fpm]: Unscheduling refresh on Service[php-fpm]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-serversignature]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/90_av_laravel-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat::Fragment[av_laravel-serversignature]/File[/var/lib/puppet/concat/25-av_laravel.conf/fragments/90_av_laravel-serversignature]: Scheduling refresh of Exec[concat_25-av_laravel.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat[25-av_laravel.conf]/Exec[concat_25-av_laravel.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat[25-av_laravel.conf]/Exec[concat_25-av_laravel.conf]: Triggered 'refresh' from 11 events
+==> default: Info: /Stage[main]/Mongodb::Server::Config/File[/etc/mongod.conf]: Filebucketed /etc/mongod.conf to puppet with sum 0aa1300d8c64318b1a7683cb3fee646e
+==> default: Notice: /Stage[main]/Mongodb::Server::Config/File[/etc/mongod.conf]/content: content changed '{md5}0aa1300d8c64318b1a7683cb3fee646e' to '{md5}c2ca106efb35f4fda24fa5bab728161d'
+==> default:
+==> default: Info: /Stage[main]/Mongodb::Server::Config/File[/etc/mongod.conf]: Scheduling refresh of Class[Mongodb::Server::Service]
+==> default: Info: Class[Mongodb::Server::Service]: Scheduling refresh of Service[mongodb]
+==> default: Notice: /Stage[main]/Mongodb::Server::Service/Service[mongodb]/ensure: ensure changed 'stopped' to 'running'
+==> default: Info: /Stage[main]/Mongodb::Server::Service/Service[mongodb]: Unscheduling refresh on Service[mongodb]
+==> default: Notice: /Stage[main]/Puphpet_mongodb/Puphpet::Php::Pecl[mongo]/Package[php-pecl-mongo]/ensure: created
+==> default: Notice: /Stage[main]/Rabbitmq::Config/File[rabbitmq-env.config]/ensure: defined content as '{md5}d1faed99ee5f85f2e3ef458c2d19f3a8'
+==> default: Info: /Stage[main]/Rabbitmq::Config/File[rabbitmq-env.config]: Scheduling refresh of Class[Rabbitmq::Service]
+==> default: Info: Class[Rabbitmq::Config]: Scheduling refresh of Class[Rabbitmq::Service]
+==> default: Info: Class[Rabbitmq::Service]: Scheduling refresh of Service[rabbitmq-server]
+==> default: Notice: /Stage[main]/Rabbitmq::Service/Service[rabbitmq-server]/ensure: ensure changed 'stopped' to 'running'
+==> default: Info: /Stage[main]/Rabbitmq::Service/Service[rabbitmq-server]: Unscheduling refresh on Service[rabbitmq-server]
+==> default: Notice: /Stage[main]/Rabbitmq::Management/Rabbitmq_user[guest]/ensure: removed
+==> default: Notice: /Stage[main]/Rabbitmq::Install::Rabbitmqadmin/Staging::File[rabbitmqadmin]/Exec[/var/lib/rabbitmq/rabbitmqadmin]/returns: executed successfully
+==> default: Notice: /Stage[main]/Rabbitmq::Install::Rabbitmqadmin/File[/usr/local/bin/rabbitmqadmin]/ensure: defined content as '{md5}117edfba1e0986b570a50664a46fe097'
+==> default: Notice: /Stage[main]/Puphpet_rabbitmq/Rabbitmq_vhost[rabbitmq.dev]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet::Firewall::Post/Firewall[999 drop all]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-logging]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/80_av_zend-logging]/ensure: defined content as '{md5}f263b1cc4b511d7608acfb92a84e0ec4'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-logging]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/80_av_zend-logging]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Puphpet_rabbitmq/Puphpet::Php::Pecl[amqp]/Php::Pecl::Module[amqp]/Exec[pecl-amqp]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-apache-header]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/0_av_zend-apache-header]/ensure: defined content as '{md5}f458c29c0237ba588e2fec40e0b7a8eb'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-apache-header]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/0_av_zend-apache-header]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Apache::Mod::Dav_fs/File[dav_fs.conf]/ensure: defined content as '{md5}899a57534f3d84efa81887ec93c90c9b'
+==> default: Info: /Stage[main]/Apache::Mod::Dav_fs/File[dav_fs.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_kohana]/Concat[25-av_kohana.conf]/File[25-av_kohana.conf]/ensure: defined content as '{md5}a87a56bd36aa143c342b94178b5ed127'
+==> default: Info: Concat[25-av_kohana.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_80]/Concat[10-default_vhost_80.conf]/File[10-default_vhost_80.conf]/ensure: defined content as '{md5}18731c49cce9ca6ff8b7dfd690fa0346'
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[default_vhost_443]/Concat[10-default_vhost_443.conf]/File[10-default_vhost_443.conf]/ensure: defined content as '{md5}b19bbe8ebffd8b42dc2f14517eaa5082'
+==> default: Info: Concat[10-default_vhost_443.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_symfony]/Concat[25-av_symfony.conf]/File[25-av_symfony.conf]/ensure: defined content as '{md5}2490d65abb2dfce191bef77e75bd4f61'
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_cakephp]/Concat[25-av_cakephp.conf]/File[25-av_cakephp.conf]/ensure: defined content as '{md5}5741638d8064753aa1c303f1b8a014a8'
+==> default: Info: Concat[10-default_vhost_80.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Info: Concat[25-av_symfony.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_laravel]/Concat[25-av_laravel.conf]/File[25-av_laravel.conf]/ensure: defined content as '{md5}7186597b12711bb3628e0da6e3c21896'
+==> default: Info: Concat[25-av_cakephp.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Exec[Create apache webroot]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet::Ssl_cert/Package[openssl]/ensure: ensure changed '1.0.1e-30.el6_6.5' to '0:1.0.1e-42.el6'
+==> default: Notice: /Stage[main]/Puphpet::Ssl_cert/Exec[make-dummy-cert /etc/ssl/certs/ssl-cert-snakeoil]/returns: executed successfully
+==> default: Info: Class[Puphpet::Ssl_cert]: Scheduling refresh of Service[httpd]
+==> default: Notice: /Stage[main]/Puphpet_apache/Exec[Set /var/www/html/index.html contents]/returns: executed successfully
+==> default: Info: Concat[25-av_laravel.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Info: create new repo yum.postgresql.org in file /etc/yum.repos.d/yum.postgresql.org.repo
+==> default: Notice: /Stage[main]/Postgresql::Repo::Yum_postgresql_org/Yumrepo[yum.postgresql.org]/descr: descr changed '' to 'PostgreSQL 9.3 $releasever - $basearch'
+==> default: Notice: /Stage[main]/Postgresql::Repo::Yum_postgresql_org/Yumrepo[yum.postgresql.org]/baseurl: baseurl changed '' to 'http://yum.postgresql.org/9.3/redhat/rhel-$releasever-$basearch'
+==> default:
+==> default: Notice: /Stage[main]/Postgresql::Repo::Yum_postgresql_org/Yumrepo[yum.postgresql.org]/enabled: enabled changed '' to '1'
+==> default: Notice: /Stage[main]/Postgresql::Repo::Yum_postgresql_org/Yumrepo[yum.postgresql.org]/gpgcheck: gpgcheck changed '' to '1'
+==> default: Notice: /Stage[main]/Postgresql::Repo::Yum_postgresql_org/Yumrepo[yum.postgresql.org]/gpgkey: gpgkey changed '' to 'file:///etc/pki/rpm-gpg/RPM-GPG-KEY-PGDG-93'
+==> default: Info: changing mode of /etc/yum.repos.d/yum.postgresql.org.repo from 600 to 644
+==> default: Notice: /Stage[main]/Postgresql::Server::Install/Package[postgresql-server]/ensure: created
+==> default: Notice: /Stage[main]/Postgresql::Server::Initdb/Exec[postgresql_initdb]/returns: executed successfully
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/File[/etc/sysconfig/pgsql/postgresql]/ensure: created
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/File[/etc/sysconfig/pgsql/postgresql-9.3]/ensure: created
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf]/ensure: created
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments.concat.out]/ensure: created
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments]/ensure: created
+==> default:
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[local access as postgres user]/Concat::Fragment[pg_hba_rule_local access as postgres user]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/001_pg_hba_rule_local access as postgres user]/ensure: defined content as '{md5}03454101c43efbcdecc71dd3f734a68f'
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[local access as postgres user]/Concat::Fragment[pg_hba_rule_local access as postgres user]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/001_pg_hba_rule_local access as postgres user]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[allow localhost TCP access to postgresql user]/Concat::Fragment[pg_hba_rule_allow localhost TCP access to postgresql user]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/003_pg_hba_rule_allow localhost TCP access to postgresql user]/ensure: defined content as '{md5}f30c1a00a0759236b37352c32cd0e284'
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[allow localhost TCP access to postgresql user]/Concat::Fragment[pg_hba_rule_allow localhost TCP access to postgresql user]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/003_pg_hba_rule_allow localhost TCP access to postgresql user]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[allow access to all users]/Concat::Fragment[pg_hba_rule_allow access to all users]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/100_pg_hba_rule_allow access to all users]/ensure: defined content as '{md5}0c5966ab4591f092ef66ce333bb3f463'
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[allow access to all users]/Concat::Fragment[pg_hba_rule_allow access to all users]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/100_pg_hba_rule_allow access to all users]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[data_directory]/Augeas[override PGDATA in /etc/sysconfig/pgsql/postgresql]/returns: executed successfully
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[data_directory]/Augeas[override PGDATA in /etc/sysconfig/pgsql/postgresql]: Scheduling refresh of Class[Postgresql::Server::Service]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[data_directory]/Postgresql_conf[data_directory]/ensure: created
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[data_directory]/Postgresql_conf[data_directory]: Scheduling refresh of Class[Postgresql::Server::Service]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_ident.conf]/ensure: created
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_ident.conf]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_ident.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_ident.conf/fragments]/ensure: created
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_ident.conf/fragments]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_ident.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[deny access to postgresql user]/Concat::Fragment[pg_hba_rule_deny access to postgresql user]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/004_pg_hba_rule_deny access to postgresql user]/ensure: defined content as '{md5}205b04b3328583b8330f59e37d55c8e8'
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[deny access to postgresql user]/Concat::Fragment[pg_hba_rule_deny access to postgresql user]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/004_pg_hba_rule_deny access to postgresql user]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[local access to database with same name]/Concat::Fragment[pg_hba_rule_local access to database with same name]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/002_pg_hba_rule_local access to database with same name]/ensure: defined content as '{md5}61275db6b21adbf53b575d4c1a6bbed1'
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[local access to database with same name]/Concat::Fragment[pg_hba_rule_local access to database with same name]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/002_pg_hba_rule_local access to database with same name]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_ident.conf/fragments.concat]/ensure: created
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/Exec[concat_/var/lib/pgsql/9.3/data/pg_ident.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/Exec[concat_/var/lib/pgsql/9.3/data/pg_ident.conf]: Triggered 'refresh' from 2 events
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/File[/var/lib/pgsql/9.3/data/pg_ident.conf]: Filebucketed /var/lib/pgsql/9.3/data/pg_ident.conf to puppet with sum f11c8332d3f444148c0b8ee83ec5fc6d
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/File[/var/lib/pgsql/9.3/data/pg_ident.conf]/content: content changed '{md5}f11c8332d3f444148c0b8ee83ec5fc6d' to '{md5}9300ac105fe777787ac9e793b8df8d25'
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]/File[/var/lib/pgsql/9.3/data/pg_ident.conf]/mode: mode changed '0600' to '0640'
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[listen_addresses]/Postgresql_conf[listen_addresses]/ensure: created
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[listen_addresses]/Postgresql_conf[listen_addresses]: Scheduling refresh of Class[Postgresql::Server::Service]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[allow access to ipv6 localhost]/Concat::Fragment[pg_hba_rule_allow access to ipv6 localhost]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/101_pg_hba_rule_allow access to ipv6 localhost]/ensure: defined content as '{md5}ab588822a007943223faadf86be3044a'
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Pg_hba_rule[allow access to ipv6 localhost]/Concat::Fragment[pg_hba_rule_allow access to ipv6 localhost]/File[/var/lib/puppet/concat/_var_lib_pgsql_9.3_data_pg_hba.conf/fragments/101_pg_hba_rule_allow access to ipv6 localhost]: Scheduling refresh of Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/Exec[concat_/var/lib/pgsql/9.3/data/pg_hba.conf]: Triggered 'refresh' from 8 events
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/File[/var/lib/pgsql/9.3/data/pg_hba.conf]: Filebucketed /var/lib/pgsql/9.3/data/pg_hba.conf to puppet with sum 9784211d3c0e7ad5a539b9dcb964b9c3
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/File[/var/lib/pgsql/9.3/data/pg_hba.conf]/content: content changed '{md5}9784211d3c0e7ad5a539b9dcb964b9c3' to '{md5}c31ee6f98ede22591533e8056938c902'
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]/File[/var/lib/pgsql/9.3/data/pg_hba.conf]/mode: mode changed '0600' to '0640'
+==> default: Info: Concat[/var/lib/pgsql/9.3/data/pg_hba.conf]: Scheduling refresh of Class[Postgresql::Server::Reload]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[port]/Augeas[override PGPORT in /etc/sysconfig/pgsql/postgresql]/returns: executed successfully
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[port]/Augeas[override PGPORT in /etc/sysconfig/pgsql/postgresql]: Scheduling refresh of Class[Postgresql::Server::Service]
+==> default: Notice: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[port]/Postgresql_conf[port]/ensure: created
+==> default: Info: /Stage[main]/Postgresql::Server::Config/Postgresql::Server::Config_entry[port]/Postgresql_conf[port]: Scheduling refresh of Class[Postgresql::Server::Service]
+==> default: Info: Concat[/var/lib/pgsql/9.3/data/pg_ident.conf]: Scheduling refresh of Class[Postgresql::Server::Reload]
+==> default: Info: Class[Postgresql::Server::Reload]: Scheduling refresh of Exec[postgresql_reload]
+==> default: Info: Class[Postgresql::Server::Service]: Scheduling refresh of Anchor[postgresql::server::service::begin]
+==> default: Info: Class[Postgresql::Server::Service]: Scheduling refresh of Service[postgresqld]
+==> default: Info: Class[Postgresql::Server::Service]: Scheduling refresh of Postgresql::Validate_db_connection[validate_service_is_running]
+==> default: Info: Class[Postgresql::Server::Service]: Scheduling refresh of Anchor[postgresql::server::service::end]
+==> default: Notice: /Stage[main]/Postgresql::Server::Service/Anchor[postgresql::server::service::begin]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Postgresql::Server::Service/Service[postgresqld]/ensure: ensure changed 'stopped' to 'running'
+==> default: Info: /Stage[main]/Postgresql::Server::Service/Service[postgresqld]: Unscheduling refresh on Service[postgresqld]
+==> default: Info: Postgresql::Validate_db_connection[validate_service_is_running]: Scheduling refresh of Exec[validate postgres connection for /postgres]
+==> default: Notice: /Stage[main]/Postgresql::Server::Service/Postgresql::Validate_db_connection[validate_service_is_running]/Exec[validate postgres connection for /postgres]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Postgresql::Server::Service/Anchor[postgresql::server::service::end]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Postgresql::Server::Reload/Exec[postgresql_reload]: Triggered 'refresh' from 1 events
+==> default: Notice: /Stage[main]/Postgresql::Server::Passwd/Exec[set_postgres_postgrespw]/returns: ALTER ROLE
+==> default: Notice: /Stage[main]/Postgresql::Server::Passwd/Exec[set_postgres_postgrespw]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_xhprof/Package[graphviz]/ensure: created
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_phalconphp]/Concat[25-av_phalconphp.conf]/File[25-av_phalconphp.conf]/ensure: defined content as '{md5}f1c5252bb663a011bec1404be4c0e4bc'
+==> default: Info: Concat[25-av_phalconphp.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-docroot]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/10_av_zend-docroot]/ensure: defined content as '{md5}bc6c9b9c2c30b1ebd804dca594c3f47f'
+==> default: Info: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat::Fragment[av_zend-docroot]/File[/var/lib/puppet/concat/25-av_zend.conf/fragments/10_av_zend-docroot]: Scheduling refresh of Exec[concat_25-av_zend.conf]
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat[25-av_zend.conf]/Exec[concat_25-av_zend.conf]/returns: executed successfully
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat[25-av_zend.conf]/Exec[concat_25-av_zend.conf]: Triggered 'refresh' from 11 events
+==> default: Notice: /Stage[main]/Puphpet_apache/Apache::Vhost[av_zend]/Concat[25-av_zend.conf]/File[25-av_zend.conf]/ensure: defined content as '{md5}1f0988cff8782f225878bad476d47456'
+==> default: Info: Concat[25-av_zend.conf]: Scheduling refresh of Class[Apache::Service]
+==> default: Info: Class[Apache::Service]: Scheduling refresh of Service[httpd]
+==> default: Notice: /Stage[main]/Apache::Service/Service[httpd]/ensure: ensure changed 'stopped' to 'running'
+==> default: Info: /Stage[main]/Apache::Service/Service[httpd]: Unscheduling refresh on Service[httpd]
+==> default: Info: Creating state file /var/lib/puppet/state/state.yaml
+==> default: Notice: Finished catalog run in 806.48 seconds
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-1bv9qce.sh
+==> default: Running files in files/exec-once
+==> default: Created file /.puphpet-stuff/exec-once-ran
+==> default: Finished running files in files/exec-once
+==> default: To run again, delete hashes you want rerun in /.puphpet-stuff/exec-once-ran or the whole file to rerun all
+==> default: Running files in files/exec-always
+==> default: Finished running files in files/exec-always
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-ipzycu.sh
+==> default: Running files in files/startup-once
+==> default: Created file /.puphpet-stuff/startup-once-ran
+==> default: Finished running files in files/startup-once
+==> default: To run again, delete hashes you want rerun in /.puphpet-stuff/startup-once-ran or the whole file to rerun all
+==> default: Running files in files/startup-always
+==> default: Finished running files in files/startup-always
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-eo3ch8.sh
+==> default: Running files in files/exec-once-unprivileged
+==> default: Created file /.puphpet-stuff/exec-once-unprivileged-ran
+==> default: Finished running files in files/exec-once-unprivileged
+==> default: To run again, delete hashes you want rerun in /.puphpet-stuff/exec-once-unprivileged-ran or the whole file to rerun all
+==> default: Running files in files/exec-always-unprivileged
+==> default: Finished running files in files/exec-always-unprivileged
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-t518kx.sh
+==> default: Running files in files/startup-once-unprivileged
+==> default: Created file /.puphpet-stuff/startup-once-unprivileged-ran
+==> default: Finished running files in files/startup-once-unprivileged
+==> default: To run again, delete hashes you want rerun in /.puphpet-stuff/startup-once-unprivileged-ran or the whole file to rerun all
+==> default: Running files in files/startup-always-unprivileged
+==> default: Finished running files in files/startup-always-unprivileged
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/37/bbgykq994mbckl5pl_5lj0l00000gn/T/vagrant-shell20150830-25354-ho1evs.sh
+==> default:                                           _
+==> default:                                          / )
+==> default:                                     .--.; |    _...,-"""-,
+==> default:                      .-""-.-""""-. /   _`'-._.'   /`      \
+==> default:                     /'     \      \|  (/'-._/     )        ;
+==> default:             .-""""-;       (       '--' /-'    _           |
+==> default:           .'       |        ;    e     /       a  ,       ;
+==> default:          /          \       |      __.'`-.__,    ;       /
+==> default:         /            `._     ;    .-'     `--.,__.\    /`
+==> default:        //|              \     \,-'                /\_.'
+==> default:       // |               `;.___>              /,-'.
+==> default:     /`|  /                |`\      _..---\    |    \
+==> default:     |/  /     _,.-----\   |  \   /`|      |   |\    \
+==> default:        /    .;   |    |   |   \ /  |      |   | \    )
+==> default:       |    / |   \    /   |\..' \   \     |   \  \..'
+==> default:    jgs \../  \.../    \.../ \.../---'     \.../
+==> default:
+==> default:
+==> default:           READ ME FOR SOME IMPORTANT INFORMATION!
+==> default:           =======================================
+==> default:
+==> default: If Puppet did not blow up (you do not see a sea of red
+==> default: above), then your VM was generated successfully!
+==> default:
+==> default: * A unique private key was generated for you! It is located
+==> default:   at "puphpet/files/dot/ssh/id_rsa". If you are on Windows,
+==> default:   a PuTTY-friendly key was also generated at same location
+==> default:   with a ".ppk" extension.
+==> default:
+==> default: * If you want to use your own private key for future
+==> default:   provisions, overwrite the generated key above with your
+==> default:   own. Make sure to follow the naming pattern, and include a
+==> default:   ".pub" public key.
+==> default:
+==> default: * If you wish to add packages, modules, Apache/Nginx vhosts,
+==> default:   or anything else, open up "puphpet/config.yaml" and make
+==> default:   changes within! Some things will have random strings like
+==> default:   "DIdXRs2OI2LJ" - you must create a random string as well!
+==> default:   To do so, please apply face to keyboard and roll.
+==> default:
+==> default: * If you change "puphpet/config.yaml", simply run
+==> default:   "$ vagrant provision" and your VM will be updated with the
+==> default:   changes you requested!
+==> default:
+==> default: Did something go wrong? Don't worry! I can (maybe) help!
+==> default: Please go to our Github issues page at:
+==> default:
+==> default: https://github.com/puphpet/puphpet/issues
+==> default:
+==> default: and search for your problem. If you do not find your problem
+==> default: answered, open a new ticket!
+==> default:
+==> default: ------------------------------------------------------------
+==> default: PLEASE REMEMBER TO INCLUDE THE CONTENTS OF YOUR
+==> default: "puphpet/config.yaml" FILE.
+==> default: ------------------------------------------------------------
+==> default:
+==> default: Make sure to xxx out any potential API keys or passwords
+==> default: that you do not want others to see!
+==> default:
+==> default: Happy programming!
+==> default:                                              - Juan Treminio
+==> default:
+==> default: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==> default: |  ____                _      _    _                    _  |
+==> default: | |  _ \ ___  __ _  __| |    / \  | |__   _____   _____| | |
+==> default: | | |_) / _ \/ _` |/ _` |   / _ \ | '_ \ / _ \ \ / / _ \ | |
+==> default: | |  _ <  __/ (_| | (_| |  / ___ \| |_) | (_) \ V /  __/_| |
+==> default: | |_| \_\___|\__,_|\__,_| /_/   \_\_.__/ \___/ \_/ \___(_) |
+==> default: |                                                          |
+==> default: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
