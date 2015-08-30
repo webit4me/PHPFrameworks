@@ -1,0 +1,13 @@
+{
+    "name": "phpframeworks/zend",
+    "description": "Zend installation on the PHPFrameworks project",
+    "authors": [
+        {
+            "name": "Ali Bahman",
+            "email": "abn@webit4.me"
+        }
+    ],
+    "require": {
+        "zendframework/zendframework": "^2.5"
+    }
+}
