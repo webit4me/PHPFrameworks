@@ -1,0 +1,15 @@
+{
+    "name": "phpframeworks/playground",
+    "description": "A platform to test different PHP frameworks",
+    "type": "project",
+    "require": {
+        "laravel/installer": "^1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Bahman",
+            "email": "abn@webit4.me"
+        }
+    ]
+}
