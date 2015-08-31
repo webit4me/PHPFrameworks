@@ -7,6 +7,9 @@
             "email": "abn@webit4.me"
         }
     ],
+    "keywords": ["framework", "zend"],
+    "license": "MIT",
+    "type": "project",
     "require": {
         "zendframework/zendframework": "^2.5"
     }

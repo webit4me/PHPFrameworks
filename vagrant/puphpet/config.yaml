@@ -312,6 +312,12 @@ apache:
                     require:
                         - 'all granted'
                     custom_fragment: ''
+                    files_match:
+                        avdfm_cakephp:
+                            path: \.php$
+                            sethandler: 'proxy:fcgi://127.0.0.1:9000'
+                            custom_fragment: ''
+                            provider: filesmatch
                     provider: directory
         av_kohana:
             servername: kohana.dev

@@ -1,8 +1,13 @@
 {
-    "name": "cakephp/app",
-    "description": "CakePHP skeleton app",
-    "homepage": "http://cakephp.org",
-    "type": "project",
+    "name": "phpframeworks/cakephp",
+    "description": "CakePHP installation on the PHPFrameworks project",
+    "authors": [
+        {
+            "name": "Ali Bahman",
+            "email": "abn@webit4.me"
+        }
+    ],
+    "keywords": ["framework", "cake"],
     "license": "MIT",
     "require": {
         "php": ">=5.4.16",
