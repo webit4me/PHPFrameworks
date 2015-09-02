@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Webserver Landing Page</title>
+    <meta name="generator" content="PuPHPet.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style type="text/css">pre { background: #444; color:#fff; border-style: none; }</style>
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js?"></script><![endif]-->
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1 class="page-header">Congratulations! PHPFrameworks is ready</h1>
+
+                    <p class="lead">Here is our playground to test different PHP frameworks.</p>
+
+                    <h3>However, if you are seeing this page, it means you are using IP Address, not virtual host!</h3>
+
+                    <p>This is probably not the page you want.</p>
+
+                    <p>
+                        This page is being served from <code>/var/www/html/index.html</code>, and is the default
+                        vhost (virtual host) that comes with most web servers.
+                    </p>
+
+                    <p>
+                        What you want to do is to add all vhosts to your hosts file.
+                    </p>
+
+                    <p>
+                        On OSX and Linux, this is located at <code>/etc/hosts</code>, on Windows it is located at
+                        <code>C:\Windows\System32\drivers\etc\hosts</code>.
+                    </p>
+
+                    <p>
+                        Add a line with the IP address of this server and all vhosts you chose. For example, if the
+                        IP address is <code>192.168.56.101</code>, and you chose vhost <code>awesome.dev</code>,
+                        you will want to enter the following:
+                    </p>
+
+                    <pre>
 192.168.56.101  local.php.frameworks
-192.168.56.101  phpframeworks.dev php.frameworks.dev
-192.168.56.101  cakephp.dev     www.cakephp.dev
-192.168.56.101  kohana.dev      www.kohana.dev
-192.168.56.101  laravel.dev     www.laravel.dev
-192.168.56.101  phalconphp.dev  www.phalconphp.dev
-192.168.56.101  symfony.dev     www.symfony.dev
-192.168.56.101  zend.dev        www.zend.dev
+192.168.56.101  phpframeworks.dev   php.frameworks.dev
+192.168.56.101  cakephp.dev         www.cakephp.dev
+192.168.56.101  kohana.dev          www.kohana.dev
+192.168.56.101  laravel.dev         www.laravel.dev
+192.168.56.101  phalconphp.dev      www.phalconphp.dev
+192.168.56.101  symfony.dev         www.symfony.dev
+192.168.56.101  zend.dev            www.zend.dev
+</pre>
+
+                    <p>
+                        If you forgot the IP address you chose, check the config file at
+                        <code>puphpet/config.yaml</code>.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
