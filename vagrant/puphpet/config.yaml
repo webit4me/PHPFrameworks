@@ -73,6 +73,7 @@ server:
         - vim-common
         - htop
         - tree
+        - re2c
         - memcached
         - php56-php-pecl-memcache
         - php56-php-pecl-memcached
