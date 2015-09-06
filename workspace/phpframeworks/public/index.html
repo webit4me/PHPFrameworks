@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
     <title>Webserver Landing Page</title>
-    <meta name="generator" content="PuPHPet.com" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
-    <style type="text/css">pre { background: #444; color:#fff; border-style: none; }</style>
-    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js?"></script><![endif]-->
+    <meta name="generator" content="PuPHPet.com"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <style type="text/css">pre {
+        background: #444;
+        color: #fff;
+        border-style: none;
+    }
+
+    .dframe {
+        float: left;
+        border: 1px #E7E5DC solid;
+        overflow: hidden;
+        height: 300px;
+        width: 240px;
+        margin: 8px;
+        padding: 2px;
+    }
+
+    iframe {
+        width: 3000px;
+        height: 3000px;
+        border: 1px #E7E5DC solid;
+        zoom: 0.30;
+        -moz-transform: scale(0.23);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.23);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.23);
+        -webkit-transform-origin: 0 0;
+    }
+
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js?"></script><![endif]-->
 </head>
 <body>
 <div class="container">
@@ -66,7 +96,86 @@
                         <span class="sr-only">Note!</span>
                         Please note! the phalconPHP's extension might required more than a apache restart in some cases.
                     </div>
-                <p>If visiting phalconphp.dev or www.phalconphp.dev doesn't show the default welcome message try to reload the box.</p>
+                    <p>
+                        If visiting phalconphp.dev or www.phalconphp.dev doesn't show the default welcome message try to
+                        reload the box.
+                    </p>
+
+                    <h1 class="page-header">Current status</h1>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="dframe panel panel-default">
+                                <div class="panel-heading">
+                                    <a href="http://cakephp.dev" target="_blank">cakephp.dev</a>
+                                </div>
+                                <div class="panel-body">
+                                    <iframe src="http://cakephp.dev"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="dframe panel panel-default">
+                                <div class="panel-heading">
+                                    <a href="http://kohana.dev" target="_blank">kohana.dev</a>
+                                </div>
+                                <div class="panel-body">
+                                    <iframe src="http://kohana.dev"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="dframe panel panel-default">
+                                <div class="panel-heading">
+                                    <a href="http://laravel.dev" target="_blank">laravel.dev</a>
+                                </div>
+                                <div class="panel-body">
+                                    <iframe src="http://laravel.dev"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="dframe panel panel-default">
+                                <div class="panel-heading">
+                                    <a href="http://phalconphp.dev" target="_blank">phalconphp.dev</a>
+                                </div>
+                                <div class="panel-body">
+                                    <iframe src="http://phalconphp.dev"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="dframe panel panel-default">
+                                <div class="panel-heading">
+                                    <a href="http://symfony.dev" target="_blank">symfony.dev</a>
+                                </div>
+                                <div class="panel-body">
+                                    <iframe src="http://symfony.dev"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="dframe panel panel-default">
+                                <div class="panel-heading">
+                                    <a href="http://zend.dev" target="_blank">zend.dev</a>
+                                </div>
+                                <div class="panel-body">
+                                    <iframe src="http://zend.dev"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -74,5 +183,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

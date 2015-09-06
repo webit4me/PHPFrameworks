@@ -1,8 +1,4 @@
 <?php
-//$exts = get_loaded_extensions();
-//asort($exts);
-//var_dump($exts);
-//echo phpinfo();
 
 error_reporting(E_ALL);
 
