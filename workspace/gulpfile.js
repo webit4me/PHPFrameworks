@@ -51,7 +51,7 @@ gulp.task('kohana:composer:update', shell.task([
 ));
 
 gulp.task('laravel:composer:update', shell.task([
-        'vagrant ssh -c "cd /workspace/laravel; && composer update;"',
+        'vagrant ssh -c "cd /workspace/laravel && composer update;"',
     ], {
         "cwd": "../vagrant"
     }
@@ -139,6 +139,15 @@ gulp.task('cakephp:init', shell.task([
         //'sudo chmod a+w log',
     ], {
         "cwd": "cakephp"
+    }
+));
+
+// laravel
+gulp.task('laravel:init', shell.task([
+        'if [ ! -f .env ]; then cp -n .env.example .env && composer update --no-scripts; fi',
+        'php artisan key:generate'
+    ], {
+        "cwd": "laravel"
     }
 ));
 
