@@ -30,10 +30,10 @@ temp/
 
 ### Symfony template
 # Cache and logs (Symfony2)
-/symfony/app/cache/*
-/symfony/app/logs/*
-!/symfony/app/cache/.gitkeep
-!/symfony/app/logs/.gitkeep
+/workspace/symfony/app/cache/*
+/workspace/symfony/app/logs/*
+!/workspace/symfony/app/cache/.gitkeep
+!/workspace/symfony/app/logs/.gitkeep
 
 # Parameters
 /app/config/parameters.yml
