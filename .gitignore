@@ -5,11 +5,7 @@ composer.phar
 composer.lock
 vendor/
 
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
 ### ZendFramework template
-# Composer files
 
 # Local configs
 config/autoload/*.local.php
@@ -24,9 +20,6 @@ data/sessions/
 data/tmp/
 temp/
 
-# Legacy ZF1
-demos/
-extras/documentation
 ### CakePHP template
 # CakePHP 3
 
@@ -35,24 +28,12 @@ extras/documentation
 /tmp/*
 /logs/*
 
-# CakePHP 2
-
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
 ### Symfony template
 # Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
-
-# Cache and logs (Symfony3)
-/var/cache/*
-/var/logs/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
+/symfony/app/cache/*
+/symfony/app/logs/*
+!/symfony/app/cache/.gitkeep
+!/symfony/app/logs/.gitkeep
 
 # Parameters
 /app/config/parameters.yml
@@ -93,4 +74,43 @@ application/logs/*
 
 ### Vagrant template
 .vagrant/
+### Symfony template
+# Cache and logs (Symfony2)
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+
+# Cache and logs (Symfony3)
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+
+# Parameters
+/app/config/parameters.yml
+/app/config/parameters.ini
+
+# Managed by Composer
+/app/bootstrap.php.cache
+/var/bootstrap.php.cache
+/bin/*
+!bin/console
+!bin/symfony_requirements
+/vendor/
+
+# Assets and user uploads
+/web/bundles/
+/web/uploads/
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Build data
+/build/
+
+# Composer PHAR
+/composer.phar
+
 
