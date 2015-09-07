@@ -46,7 +46,8 @@ class supervisord::params {
   $umask                = '022'
   $config_include       = '/etc/supervisor.d'
   $config_file          = '/etc/supervisord.conf'
-  $setuptools_url       = 'https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py'
+# $setuptools_url       = 'https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py'
+  $setuptools_url       = 'https://bitbucket.org/pypa/setuptools/raw/e9fb153e7121a502977dde734996e54cd88aac26/ez_setup.py'
 
   $unix_socket          = true
   $unix_socket_file     = 'supervisor.sock'
