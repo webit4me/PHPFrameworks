@@ -1,57 +1,89 @@
-////// grunt/config/watch.js
-////grunt.initConfig({
-////    pkg: grunt.file.readJSON('package.json'),
-////    uglify: {
-////        options: {
-////            banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-////        },
-////        build: {
-////            src: 'src/<%= pkg.name %>.js',
-////            dest: 'build/<%= pkg.name %>.min.js'
-////        }
-////    }
-////});
-//
-//module.exports = function(grunt, config) {
-//
-//    grunt.config('vagrantssh', {
-//
-//                restart_apache: {
-//                    path: '../vagrant/',
-//                    commands: [
-//                        'sudo service httpd stop',
-//                        'sudo service httpd start'
-//                    ],
-//                    flags: ['-t', '-A'],
-//                    callback: function (grunt, output) {
-//                        grunt.log.writeln(output);
-//                    },
-//                }
-//    });
-//
-//};
+// grunt/config/vagrant.js
 
+var $vagrantFolder = '../vagrant/';
+var $workspace = '/workspace';
 
 module.exports = {
-            restart_apache: {
-                path: '../vagrant/',
-                commands: [
-                    'sudo service httpd stop',
-                    'sudo service httpd start'
-                ],
-                flags: [ '-t', '-A' ],
-                callback: function( grunt, output ) {
-                    grunt.log.writeln(output );
-                }
-            },
-            asd: {
-                path: '../vagrant/',
-                commands: [
-                    'ls -la'
-                ],
-                flags: [ '-t', '-A' ],
-                callback: function( grunt, output ) {
-                    grunt.log.writeln(output );
-                }
-            },
+    apache_restart: {
+        path: $vagrantFolder,
+        commands: [
+            'sudo service httpd stop',
+            'sudo service httpd start'
+        ],
+        flags: ['-t', '-A'],
+        callback: function (grunt, output) {
+            grunt.log.writeln(output);
+        }
+    },
+    homepage_copy: {
+        path: $vagrantFolder,
+        commands: [
+            'sudo cp -f /workspace/phpframeworks/public/index.html /var/www/html/',
+        ],
+    },
+    composer_update_workspace: {
+        path: $vagrantFolder,
+        commands: [
+            'cd ' + $workspace,
+            'composer update'
+        ],
+        callback: function (grunt, output) {
+            grunt.log.writeln(output);
+        }
+    },
+    composer_update_cakephp: {
+        path: $vagrantFolder,
+        commands: [
+            'cd ' + $workspace + '/cakephp',
+            'composer update'
+        ],
+        flags: ['-t', '-A'],
+        callback: function (grunt, output) {
+            grunt.log.writeln(output);
+        }
+    },
+    composer_update_kahona: {
+        path: $vagrantFolder,
+        commands: [
+            'cd ' + $workspace + '/kahona',
+            'composer update'
+        ],
+        flags: ['-t', '-A'],
+        callback: function (grunt, output) {
+            grunt.log.writeln(output);
+        }
+    },
+    composer_update_laravel: {
+        path: $vagrantFolder,
+        commands: [
+            'cd ' + $workspace + '/laravel',
+            'composer update'
+        ],
+        flags: ['-t', '-A'],
+        callback: function (grunt, output) {
+            grunt.log.writeln(output);
+        }
+    },
+    composer_update_symfony: {
+        path: $vagrantFolder,
+        commands: [
+            'cd ' + $workspace + '/symfony',
+            'composer update'
+        ],
+        flags: ['-t', '-A'],
+        callback: function (grunt, output) {
+            grunt.log.writeln(output);
+        }
+    },
+    composer_update_zend: {
+        path: $vagrantFolder,
+        commands: [
+            'cd ' + $workspace + '/zend',
+            'composer update'
+        ],
+        flags: ['-t', '-A'],
+        callback: function (grunt, output) {
+            grunt.log.writeln(output);
+        }
+    }
 }
