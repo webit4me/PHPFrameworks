@@ -1,4 +1,4 @@
-// grunt/tasks/default.js
+// grunt/tasks/vagrantssh.js
 
 module.exports = function (grunt) {
 
@@ -22,5 +22,7 @@ module.exports = function (grunt) {
     grunt.registerTask('composer:update:laravel', 'Runs "composer update" in the kahona directory', 'vagrantssh:composer_update_laravel');
     grunt.registerTask('composer:update:symfony', 'Runs "composer update" in the kahona directory', 'vagrantssh:composer_update_symfony');
     grunt.registerTask('composer:update:zend', 'Runs "composer update" in the zend directory', 'vagrantssh:composer_update_zend');
+
+    grunt.registerTask('phalcon:install', 'Compile and installing phalconPHP extension', 'vagrantssh:phalcon_install');
 
 };

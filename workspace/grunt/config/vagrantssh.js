@@ -1,4 +1,4 @@
-// grunt/config/vagrant.js
+// grunt/config/vagrantssh.js
 
 var $vagrantFolder = '../vagrant/';
 var $workspace = '/workspace';
@@ -21,6 +21,7 @@ module.exports = {
             'sudo cp -f /workspace/phpframeworks/public/index.html /var/www/html/',
         ],
     },
+    // Composer
     composer_update_workspace: {
         path: $vagrantFolder,
         commands: [
@@ -80,6 +81,16 @@ module.exports = {
         commands: [
             'cd ' + $workspace + '/zend',
             'composer update'
+        ],
+        flags: ['-t', '-A'],
+        callback: function (grunt, output) {
+            grunt.log.writeln(output);
+        }
+    },
+    phalcon_install: {
+        path: $vagrantFolder,
+        commands: [
+            '/vagrant/puphpet/files/exec-once/install_phalconphp.sh',
         ],
         flags: ['-t', '-A'],
         callback: function (grunt, output) {
