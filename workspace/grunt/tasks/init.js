@@ -7,6 +7,7 @@ module.exports = function (grunt) {
             'vagrantssh:homepage_copy',
             'shell:laravel_init',
             'shell:cakephp_init',
+            'composer:update:all',
         ]
     );
 
