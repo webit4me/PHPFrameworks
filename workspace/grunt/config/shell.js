@@ -14,6 +14,7 @@ module.exports = {
             'sed -i -e "s/\'database\' => \'my_app\'/\'database\' => \'dbcakephp\'/g" config/app.php',
             'sed -i -e "s/\'username\' => \'my_app\'/\'username\' => \'dbuser\'/g" config/app.php',
             'sed -i -e "s/\'password\' => \'secret\'/\'password\' => \'123\'/g" config/app.php',
+            'composer update'
         ].join('&&'),
         options: {
             execOptions: {
