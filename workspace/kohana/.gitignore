@@ -1,0 +1,4 @@
+### Kohana template
+application/cache/*
+application/logs/*
+

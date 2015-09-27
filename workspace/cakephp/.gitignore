@@ -1,5 +1,8 @@
-/vendor/*
+### CakePHP template
+# CakePHP 3
 /config/app.php
 /config/app.php-e
 /tmp/*
 /logs/*
+
+
