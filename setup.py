@@ -2,12 +2,12 @@
 
 import os, sys
 
-if '-v' or '--verbose' in sys.argv:
+if '-v' in sys.argv:
     VERBOSE = 1
 else:
     VERBOSE = 0
 
-if '-d' or '--dry-run' in sys.argv:
+if '-d' in sys.argv:
     DRY_RUN = 1
 else:
     DRY_RUN = 0
@@ -32,6 +32,7 @@ def confirm(text, colour=CYAN):
 def runCommand(cmd):
     if VERBOSE == 1:
         inform(cmd, BLUE)
+
     if DRY_RUN == 0:
         os.system(cmd)
 
