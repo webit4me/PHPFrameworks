@@ -2,14 +2,26 @@
 
 import os, sys
 
-vm_ip = '192.168.56.101'
+DRY_RUN = 1
+BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
+VM_IP = '192.168.56.101'
+
 path_installation = os.path.dirname(os.path.realpath(__file__))
 path_workspace = path_installation + '/workspace'
 path_vagrant = path_installation + '/vagrant'
 
 
-def updateHosts():
+def inform(text, colour=CYAN):
+    print "\x1b[1;%dm" % (30 + colour) + text + "\x1b[0m"
 
+def confirm(text, colour=CYAN):
+    return raw_input("\x1b[1;%dm" % (30 + colour) + text + "\x1b[0m")
+
+def runCommand(cmd):
+    if DRY_RUN == 0:
+        os.system(cmd)
+
+def updateHosts():
     if 'linux' or 'darwin' in sys.platform:
         path_etc = '/etc/'
     else:
@@ -45,68 +57,81 @@ def updateHosts():
     f = open(path_tmp_hosts, 'a')
     for loopback in loopbacks:
         f.write('\n')
-        line_to_write = loopback.ljust(50) % (vm_ip + '\t') + line_signature
+        line_to_write = loopback.ljust(50) % (VM_IP + '\t') + line_signature
         f.write(line_to_write)
     f.write('\n')
     f.close()
 
     f = open(path_tmp_hosts, 'r')
-    print 100 * '_'
-    print f.read();
-    print 100 * '_'
+    inform(100 * '_')
+    inform(f.read(), WHITE);
+    inform(100 * '_')
 
-    doUpdate = raw_input('Can I update your hosts file to what printed above [yes]?') or 'yes'
+    doUpdate = confirm('Can I update your hosts file to what printed above [yes]?') or 'yes'
     if doUpdate == 'yes':
-        print 'Copying a backup of your current hosts files into ' + path_hosts_bu;
-        os.system('sudo cp %s %s' % (path_hosts, path_hosts_bu))
-        os.system('sudo cp %s %s' % (path_tmp_hosts, path_hosts))
+        inform('Copying a backup of your current hosts files into ' + path_hosts_bu)
+        runCommand('sudo cp %s %s' % (path_hosts, path_hosts_bu))
+        runCommand('sudo cp %s %s' % (path_tmp_hosts, path_hosts))
 
+inform('This script will setup the PHPframeworks\' Virtual machin and will require sudo accesss to:')
+inform('\t 1. Mount NFS shared folder during initial vagrant up in the beginning')
+inform('\t 2. Mount NFS shared folder during vagrant reload end of the process')
+inform('\t 3. To update you hosts files with required loopbacks')
 
-print 'Move to the vagrant directory'
+shall_we = confirm('Shall we continue [yes/no]?', MAGENTA) or 'No'
+
+if shall_we != 'yes' :
+    quit('Exiting the setup process')
+
+inform('Move to the vagrant directory')
 os.chdir(path_vagrant)
 
-print 'Boot up  VM'
-os.system('vagrant up')
+inform('Boot up  the VM')
+runCommand('vagrant up')
 
 os.chdir(path_workspace + '/cakephp/config')
 if not os.path.exists('app.php'):
-    print 'Initializing CakePHP'
-    print 'CakePHP configuration'
-    os.system('cp app.default.php app.php')
-    os.system('sed -i -e "s/__SALT__/PHP_FRAMEWORKS/g" app.php')
-    os.system('sed -i -e "s/\'database\' => \'my_app\'/\'database\' => \'dbcakephp\'/g" app.php')
-    os.system('sed -i -e "s/\'username\' => \'my_app\'/\'username\' => \'dbuser\'/g" app.php')
-    os.system('sed -i -e "s/\'password\' => \'secret\'/\'password\' => \'123\'/g" app.php')
+    inform('Setting up CakePHP')
+    inform('CakePHP configuration')
+    runCommand('cp app.default.php app.php')
+    runCommand('sed -i -e "s/__SALT__/PHP_FRAMEWORKS/g" app.php')
+    runCommand('sed -i -e "s/\'database\' => \'my_app\'/\'database\' => \'dbcakephp\'/g" app.php')
+    runCommand('sed -i -e "s/\'username\' => \'my_app\'/\'username\' => \'dbuser\'/g" app.php')
+    runCommand('sed -i -e "s/\'password\' => \'secret\'/\'password\' => \'123\'/g" app.php')
 
-    print 'CakePHP update composer'
+    inform('CakePHP update composer')
     os.chdir(path_vagrant)
-    os.system("vagrant ssh -c 'cd /workspace/cakephp && composer update'")
+    runCommand("vagrant ssh -c 'cd /workspace/cakephp && composer update'")
     os.chdir(path_workspace + '/cakephp')
 
 os.chdir(path_workspace + '/laravel')
 if not os.path.exists('.env'):
-    print 'Initializing Laravel'
-    print 'Copy .env'
-    os.system('cp -n .env.example .env')
-    print 'Laravel updae composer withouth runing scripts'
+    inform('Setting up Laravel')
+    inform('Copy .env file')
+    runCommand('cp -n .env.example .env')
+    inform('Laravel updae composer withouth runing scripts')
     os.chdir(path_vagrant)
-    os.system("vagrant ssh -c 'cd /workspace/laravel && composer update --no-scripts && php artisan key:generate'")
+    runCommand("vagrant ssh -c 'cd /workspace/laravel && composer update --no-scripts && php artisan key:generate'")
 
 os.chdir(path_workspace + '/symfony')
 if not os.path.isabs('vendor'):
-    print 'Initializing Symfony'
-    print 'Symfony updae composer'
+    inform('Setting Symfony')
+    inform('Symfony updae composer')
     os.chdir(path_vagrant)
-    os.system("vagrant ssh -c 'cd /workspace/symfony && composer update'")
+    runCommand("vagrant ssh -c 'cd /workspace/symfony && composer update'")
 
 os.chdir(path_workspace + '/zend')
 if not os.path.isabs('vendor'):
-    print 'Initializing Zend'
-    print 'Zend updae composer'
+    inform('Setting up Zend')
+    inform('Zend updae composer')
     os.chdir(path_vagrant)
-    os.system("vagrant ssh -c 'cd /workspace/Zend && composer update'")
+    runCommand("vagrant ssh -c 'cd /workspace/Zend && composer update'")
 
-print 'Reaload the VM to kick of the phalconPHP'
-os.system('vagrant reload')
+inform('Reaload the VM to kick of the phalconPHP')
+runCommand('vagrant reload')
 
 updateHosts()
+
+runCommand('curl -sSf http://local.php.frameworks > /dev/null')
+
+inform('All done! head to http://local.php.frameworks to check status of all of your fresh PHP frameworks', MAGENTA)
