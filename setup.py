@@ -3,7 +3,7 @@
 import os, sys
 
 vm_ip = '192.168.56.101'
-path_installation = os.path.dirname(os.path.realpath(__file__)) + '/phpframeworks'
+path_installation = os.path.dirname(os.path.realpath(__file__))
 path_workspace = path_installation + '/workspace'
 path_vagrant = path_installation + '/vagrant'
 
