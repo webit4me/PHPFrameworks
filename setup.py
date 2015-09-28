@@ -104,6 +104,9 @@ if shall_we != 'yes':
 inform('Move to the vagrant directory')
 os.chdir(path_vagrant)
 
+inform('Copy puphpet\'s config file')
+runCommand('cp puphpet/config.yaml.dist puphpet/config.yaml')
+
 inform('Boot up  the VM')
 runCommand('vagrant up')
 
