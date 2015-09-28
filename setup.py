@@ -145,11 +145,11 @@ if not os.path.isabs('vendor'):
     os.chdir(path_vagrant)
     runCommand("vagrant ssh -c 'cd /workspace/Zend && composer update'")
 
-inform('Reaload the VM to kick of the phalconPHP')
+inform('Reaload the VM to kick off the phalconPHP')
 runCommand('vagrant reload')
 
 updateHosts()
 
-runCommand('curl -sSf http://local.php.frameworks > /dev/null')
+runCommand('curl -sSf http://cakephp.dev > /dev/null')
 
 inform('All done! head to http://local.php.frameworks to check status of all of your fresh PHP frameworks', MAGENTA)
