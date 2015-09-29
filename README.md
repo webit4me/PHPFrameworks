@@ -34,6 +34,6 @@ While you are at the root directory of PHPFrameworks simply run PHPFrameworks
 ./setup_blackfire.py
 ````
 
-And finally using Chrome browser you are going to need to install ![BlakFire extension](https://chrome.google.com/webstore/detail/blackfire-companion/miefikpgahefdbcgoiicnmpbeeomffld?hl=en)
+And finally using Chrome browser you are going to need to install [BlakFire extension!](https://chrome.google.com/webstore/detail/blackfire-companion/miefikpgahefdbcgoiicnmpbeeomffld?hl=en)
 
 ![](https://github.com/webit4me/PHPFrameworks/blob/develop/workspace/phpframeworks/public/images/blackfire.png?raw=true)
