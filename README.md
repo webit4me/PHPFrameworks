@@ -1,6 +1,9 @@
 # PHPFrameworks
 A play-ground to test different PHP frameworks
 
+[![Code Climate](https://codeclimate.com/github/webit4me/PHPFrameworks/badges/gpa.svg)](https://codeclimate.com/github/webit4me/PHPFrameworks)
+[![Test Coverage](https://codeclimate.com/github/webit4me/PHPFrameworks/badges/coverage.svg)](https://codeclimate.com/github/webit4me/PHPFrameworks/coverage)
+
 How to setup
 --------------
 
