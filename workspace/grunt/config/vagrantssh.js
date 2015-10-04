@@ -4,97 +4,78 @@ var $vagrantFolder = '../vagrant/';
 var $workspace = '/workspace';
 
 module.exports = {
-    apache_restart: {
+    options: {
         path: $vagrantFolder,
-        commands: [
-            'sudo service httpd stop',
-            'sudo service httpd start'
-        ],
         flags: ['-t', '-A'],
         callback: function (grunt, output) {
             grunt.log.writeln(output);
         }
     },
+    // APACHE : ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    apache_restart: {
+        commands: [
+            'sudo service httpd stop',
+            'sudo service httpd start',
+        ],
+    },
+    apache_start: {
+        commands: [
+            'sudo service httpd start'
+        ],
+    },
+    apache_stop: {
+        commands: [
+            'sudo service httpd stop'
+        ],
+    },
+
+
+    // Black Fire //////////////////////////////////////////////////////////////////////////////////////////////////////
+    blackfire_disable: {
+        commands: [
+            "sudo sed -i -e 's/^extension=blackfire.so/\;extension=blackfire.so/g' /etc/php.d/zz-blackfire.ini"
+        ]
+    },
+    blackfire_enable: {
+        commands: [
+            "sudo sed -i -e 's/^;extension=blackfire.so/extension=blackfire.so/g' /etc/php.d/zz-blackfire.ini"
+        ]
+    },
+
+
+
+    // Home-page ///////////////////////////////////////////////////////////////////////////////////////////////////////
     homepage_copy: {
-        path: $vagrantFolder,
         commands: [
             'sudo cp -f /workspace/phpframeworks/public/index.html /var/www/html/',
         ],
     },
-    // Composer
-    composer_update_workspace: {
-        path: $vagrantFolder,
+
+
+    // XDebug //////////////////////////////////////////////////////////////////////////////////////////////////////////
+    xdebug_disable: {
         commands: [
-            'cd ' + $workspace,
-            'composer update'
-        ],
-        callback: function (grunt, output) {
-            grunt.log.writeln(output);
-        }
+            "sudo sed -i -e 's/^zend\_extension\=/\;zend\_extension=/g' /etc/php.d/zzzz_custom.ini"
+        ]
     },
-    composer_update_cakephp: {
-        path: $vagrantFolder,
+    xdebug_enable: {
         commands: [
-            'cd ' + $workspace + '/cakephp',
-            'composer update'
-        ],
-        flags: ['-t', '-A'],
-        callback: function (grunt, output) {
-            grunt.log.writeln(output);
-        }
+            "sudo sed -i -e 's/^;zend\_extension\=/zend\_extension=/g' /etc/php.d/zzzz_custom.ini"
+        ]
     },
-    composer_update_kahona: {
-        path: $vagrantFolder,
+
+
+    // XHProf //////////////////////////////////////////////////////////////////////////////////////////////////////////
+    xhprof_disable: {
         commands: [
-            'cd ' + $workspace + '/kahona',
-            'composer update'
-        ],
-        flags: ['-t', '-A'],
-        callback: function (grunt, output) {
-            grunt.log.writeln(output);
-        }
+            "sudo sed -i -e 's/^extension=xhprof.so/\;extension=xhprof.so/g' /etc/php.d/20-xhprof-custom.ini"
+        ]
     },
-    composer_update_laravel: {
-        path: $vagrantFolder,
+    xhprof_enable: {
         commands: [
-            'cd ' + $workspace + '/laravel',
-            'composer update'
-        ],
-        flags: ['-t', '-A'],
-        callback: function (grunt, output) {
-            grunt.log.writeln(output);
-        }
+            "sudo sed -i -e 's/^;extension=xhprof.so/extension=xhprof.so/g' /etc/php.d/20-xhprof-custom.ini"
+        ]
     },
-    composer_update_symfony: {
-        path: $vagrantFolder,
-        commands: [
-            'cd ' + $workspace + '/symfony',
-            'composer update'
-        ],
-        flags: ['-t', '-A'],
-        callback: function (grunt, output) {
-            grunt.log.writeln(output);
-        }
-    },
-    composer_update_zend: {
-        path: $vagrantFolder,
-        commands: [
-            'cd ' + $workspace + '/zend',
-            'composer update'
-        ],
-        flags: ['-t', '-A'],
-        callback: function (grunt, output) {
-            grunt.log.writeln(output);
-        }
-    },
-    phalcon_install: {
-        path: $vagrantFolder,
-        commands: [
-            '/vagrant/puphpet/files/exec-once/install_phalconphp.sh',
-        ],
-        flags: ['-t', '-A'],
-        callback: function (grunt, output) {
-            grunt.log.writeln(output);
-        }
-    }
+
+
 }

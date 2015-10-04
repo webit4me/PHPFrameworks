@@ -1,6 +1,6 @@
 // Gruntfile.js
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
 
@@ -22,8 +22,8 @@ function loadConfig(path) {
     var object = {};
     var key;
 
-    glob.sync('*', {cwd: path}).forEach(function(option) {
-        key = option.replace(/\.js$/,'');
+    glob.sync('*', {cwd: path}).forEach(function (option) {
+        key = option.replace(/\.js$/, '');
         object[key] = require(path + option);
     });
 
