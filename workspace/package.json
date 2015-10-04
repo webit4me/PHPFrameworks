@@ -10,15 +10,10 @@
   "devDependencies": {
     "glob": "^5.0.14",
     "grunt": "~0.4.5",
-    "grunt-available-tasks": "^0.6.0",
     "grunt-shell": "^1.1.2",
     "grunt-vagrant-ssh": "^0.1.0",
-    "jit-grunt": "^0.9.1",
     "load-grunt-config": "^0.17.2",
-    "load-grunt-tasks": "^3.2.0",
-    "sass": "^0.5.0",
-    "shelljs": "^0.5.3",
-    "watch": "^0.16.0"
+    "load-grunt-tasks": "^3.2.0"
   },
   "scripts": {}
 }
