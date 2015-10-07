@@ -296,7 +296,7 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_zend:
+                        avdfm_phalconphp:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
@@ -331,7 +331,7 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_cakephp:
+                        avdfm_symfony:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
@@ -366,7 +366,7 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_cakephp:
+                        avdfm_laravel:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
@@ -401,7 +401,42 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_cakephp:
+                        avdfm_kohana:
+                            path: \.php$
+                            sethandler: 'proxy:fcgi://127.0.0.1:9000'
+                            custom_fragment: ''
+                            provider: filesmatch
+                    provider: directory
+        av_webgrind:
+            servername: webgrind.local
+            serveraliases:
+                - www.webgrind.local
+            docroot: /workspace/profiler/webgrind
+            port: '80'
+            setenv:
+                - 'APP_ENV app'
+            custom_fragment: ''
+            ssl: '0'
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+            ssl_protocol: ''
+            ssl_cipher: ''
+            directories:
+                avd_webgrind:
+                    path: /workspace/profiler/webgrind
+                    options:
+                        - Indexes
+                        - FollowSymlinks
+                        - MultiViews
+                    allow_override:
+                        - All
+                    require:
+                        - 'all granted'
+                    custom_fragment: ''
+                    files_match:
+                        avdfm_webgrind:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
@@ -449,6 +484,9 @@ xdebug:
         xdebug.var_display_max_data: '10000'
         xdebug.var_display_max_depth: '20'
         xdebug.max_nesting_level: '200'
+        xdebug.profiler_enable: '0'
+        xdebug.profiler_enable_trigger: '1'
+        xdebug.profiler_output_dir: '/workspace/profiler/logs'
 blackfire:
     install: '0'
     settings:

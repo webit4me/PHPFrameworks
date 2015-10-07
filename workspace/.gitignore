@@ -6,7 +6,8 @@ vendor/
 
 ### Node template
 # Logs
-logs
+*/logs/*
+!*/logs/keep.me
 *.log
 npm-debug.log*
 

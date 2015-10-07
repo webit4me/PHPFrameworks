@@ -57,7 +57,8 @@ def updateHosts():
         "%s laravel.dev        www.laravel.dev",
         "%s phalconphp.dev     www.phalconphp.dev",
         "%s symfony.dev        www.symfony.dev",
-        "%s zend.dev           www.zend.dev"
+        "%s zend.dev           www.zend.dev",
+        "%s webgrind.local     www.webgrind.local"
     ];
 
     f = open(path_hosts, 'r')
