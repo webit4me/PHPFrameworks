@@ -170,6 +170,7 @@ apache:
             port: '80'
             setenv:
                 - 'APP_ENV dev'
+                - 'php_admin_value auto_prepend_file "/workspace/profiler/xhgui/external/header.php"'
             custom_fragment: ''
             ssl: '0'
             ssl_cert: ''
@@ -205,6 +206,7 @@ apache:
             port: '80'
             setenv:
                 - 'APP_ENV dev'
+                - 'php_admin_value auto_prepend_file "/workspace/profiler/xhgui/external/header.php"'
             custom_fragment: ''
             ssl: '0'
             ssl_cert: ''
@@ -240,6 +242,7 @@ apache:
             port: '80'
             setenv:
                 - 'APP_ENV dev'
+                - 'php_admin_value auto_prepend_file "/workspace/profiler/xhgui/external/header.php"'
             custom_fragment: ''
             ssl: '0'
             ssl_cert: ''
@@ -275,6 +278,7 @@ apache:
             port: '80'
             setenv:
                 - 'APP_ENV dev'
+                - 'php_admin_value auto_prepend_file "/workspace/profiler/xhgui/external/header.php"'
             custom_fragment: ''
             ssl: '0'
             ssl_cert: ''
@@ -310,6 +314,7 @@ apache:
             port: '80'
             setenv:
                 - 'APP_ENV dev'
+                - 'php_admin_value auto_prepend_file "/workspace/profiler/xhgui/external/header.php"'
             custom_fragment: ''
             ssl: '0'
             ssl_cert: ''
@@ -345,6 +350,7 @@ apache:
             port: '80'
             setenv:
                 - 'APP_ENV dev'
+                - 'php_admin_value auto_prepend_file "/workspace/profiler/xhgui/external/header.php"'
             custom_fragment: ''
             ssl: '0'
             ssl_cert: ''
@@ -380,6 +386,7 @@ apache:
             port: '80'
             setenv:
                 - 'APP_ENV app'
+                - 'php_admin_value auto_prepend_file "/workspace/profiler/xhgui/external/header.php"'
             custom_fragment: ''
             ssl: '0'
             ssl_cert: ''
@@ -414,7 +421,7 @@ apache:
             docroot: /workspace/profiler/webgrind
             port: '80'
             setenv:
-                - 'APP_ENV app'
+                - 'APP_ENV local'
             custom_fragment: ''
             ssl: '0'
             ssl_cert: ''
@@ -503,6 +510,8 @@ blackfire:
             log_level: '1'
 xhprof:
     install: '1'
+    settings:
+        xhprof.output_dir: '/workspace/profiler/logs'
 wpcli:
     install: '0'
     version: v0.19.0

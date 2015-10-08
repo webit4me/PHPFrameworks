@@ -5,3 +5,5 @@
  * Date: 28/09/2015
  * Time: 19:27
  */
+
+echo phpinfo();
