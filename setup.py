@@ -58,7 +58,8 @@ def updateHosts():
         "%s phalconphp.dev     www.phalconphp.dev",
         "%s symfony.dev        www.symfony.dev",
         "%s zend.dev           www.zend.dev",
-        "%s webgrind.local     www.webgrind.local"
+        "%s webgrind.local     www.webgrind.local",
+        "%s xhgui.local        www.xhgui.local"
     ];
 
     f = open(path_hosts, 'r')
@@ -147,9 +148,12 @@ if not os.path.isabs('vendor'):
     say('Setting up Zend')
     say('Zend updae composer')
     os.chdir(path_vagrant)
-    runCommand("vagrant ssh -c 'cd /workspace/Zend && composer update'")
+    runCommand("vagrant ssh -c 'cd /workspace/zend && composer update'")
 
-say('Reaload the VM to kick off the phalconPHP')
+os.chdir(path_vagrant)
+runCommand("vagrant ssh -c 'cd /workspace//profiler/xhgui && sudo php install.php'")
+
+say('Reload the VM to kick off the phalconPHP')
 runCommand('vagrant reload')
 
 updateHosts()
