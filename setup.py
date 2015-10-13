@@ -161,3 +161,6 @@ updateHosts()
 runCommand('curl -sSf http://cakephp.dev > /dev/null')
 
 say('All done! head to http://local.php.frameworks to check status of all of your fresh PHP frameworks', MAGENTA)
+
+os.chdir(path_workspace)
+runCommand('npm install')
