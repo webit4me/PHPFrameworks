@@ -493,7 +493,7 @@ php:
         display_errors: 'On'
         error_reporting: '-1'
         session.save_path: /var/lib/php/session
-        date.timezone: UTC
+        date.timezone: Europe/London
     fpm_ini:
         error_log: /var/log/php-fpm.log
     fpm_pools:
