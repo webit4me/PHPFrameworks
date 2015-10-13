@@ -164,3 +164,8 @@ say('All done! head to http://local.php.frameworks to check status of all of you
 
 os.chdir(path_workspace)
 runCommand('npm install')
+
+os.chdir(path_workspace + '/node_modules')
+runCommand('rm -rf grunt-vagrant-ssh && git clone https://github.com/webit4me/grunt-vagrant-ssh.git)
+os.chdir(path_workspace + '/node_modules/grunt-vagrant-ssh')
+runCommand('npm install')
