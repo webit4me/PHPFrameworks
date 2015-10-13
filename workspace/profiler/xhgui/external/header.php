@@ -1,6 +1,6 @@
 <?php
 
-if (in_array($_SERVER['SERVER_NAME'], [
+if (array_key_exists('SERVER_NAME', $_SERVER) && in_array($_SERVER['SERVER_NAME'], [
     'xhgui.local',
     'www.xhgui.local',
     'webgrind.local',
