@@ -36,7 +36,15 @@ class puphpet::php::xhprof (
     webserver    => $webserver_service,
     ini_filename => '20-xhprof-custom.ini',
     entry        => 'XHPROF/xhprof.output_dir',
-    value        => '/tmp',
+    value        => '/workspace/profiler/logs',
+    ensure       => 'present',
+  }
+  -> puphpet::php::ini { 'add xhprof external header using auto_prepend_file':
+    php_version  => $php_version,
+    webserver    => $webserver_service,
+    ini_filename => '20-xhprof-custom.ini',
+    entry        => 'XHPROF/auto_prepend_file',
+    value        => '/workspace/profiler/xhgui/external/header.php',
     ensure       => 'present',
   }
 
