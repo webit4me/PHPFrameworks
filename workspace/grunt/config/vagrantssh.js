@@ -33,12 +33,12 @@ module.exports = {
     // Black Fire //////////////////////////////////////////////////////////////////////////////////////////////////////
     blackfire_disable: {
         commands: [
-            "sudo sed -i -e 's/^extension=blackfire.so/\;extension=blackfire.so/g' /etc/php.d/zz-blackfire.ini"
+            "if [ -f /etc/php.d/zz-blackfire.ini ]; then sudo sed -i -e 's/^extension=blackfire.so/\;extension=blackfire.so/g' /etc/php.d/zz-blackfire.ini fi"
         ]
     },
     blackfire_enable: {
         commands: [
-            "sudo sed -i -e 's/^;extension=blackfire.so/extension=blackfire.so/g' /etc/php.d/zz-blackfire.ini"
+            "if [ -f /etc/php.d/zz-blackfire.ini ]; then sudo sed -i -e 's/^;extension=blackfire.so/extension=blackfire.so/g' /etc/php.d/zz-blackfire.ini fi"
         ]
     },
 

@@ -9,9 +9,7 @@ module.exports = function (grunt) {
 
     // BlackFire ///////////////////////////////////////////////////////////////////////////////////////////////////////
     grunt.registerTask('blackfire:disable', 'Disable BlackFire\'s PHP extetion', 'vagrantssh:blackfire_disable');
-    grunt.registerTask('blackfire:enable', 'Enable BlackFire\'s PHP extetion, as well as deisabling the xdebug and xhprof', [
-        'vagrantssh:xdebug_disable',
-        'vagrantssh:xhprof_disable',
+    grunt.registerTask('blackfire:enable', 'Enable BlackFire\'s PHP extetion', [
         'vagrantssh:blackfire_enable',
         'vagrantssh:apache_restart',
     ]);
@@ -21,16 +19,14 @@ module.exports = function (grunt) {
 
     // XDebug //////////////////////////////////////////////////////////////////////////////////////////////////////////
     grunt.registerTask('xdebug:disable', 'Disable XDebug\'s PHP extetion', 'vagrantssh:xdebug_disable');
-    grunt.registerTask('xdebug:enable', 'Enable XDebug\'s PHP extetion, as well as deisabling the BlackFire', [
-        'vagrantssh:blackfire_disable',
+    grunt.registerTask('xdebug:enable', 'Enable XDebug\'s PHP extetion', [
         'vagrantssh:xdebug_enable',
         'vagrantssh:apache_restart',
     ]);
 
     // XHProf //////////////////////////////////////////////////////////////////////////////////////////////////////////
     grunt.registerTask('xhprof:disable', 'Disable XHProf\'s PHP extetion', 'vagrantssh:xhprof_disable');
-    grunt.registerTask('xhprof:enable', 'Enable XHProf\'s PHP extetion, as well as deisabling the BlackFire', [
-        'vagrantssh:blackfire_disable',
+    grunt.registerTask('xhprof:enable', 'Enable XHProf\'s PHP extetion', [
         'vagrantssh:xhprof_enable',
         'vagrantssh:apache_restart',
     ]);
