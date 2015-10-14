@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "description": "Node dependence management for PHP Frameworks' playground",
   "dependencies": {
-    "gulp": "3.9.0",
-    "gulp-shell": "0.4.3",
-    "gulp-task-listing": "1.0.1"
+
   },
   "devDependencies": {
     "glob": "^5.0.14",
